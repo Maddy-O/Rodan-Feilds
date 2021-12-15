@@ -1,12 +1,14 @@
 
 
 var total = [];
-var bag = JSON.parse(localStorage.getItem("bagData")) || [];
-displayData(bag)
+var arr2 = JSON.parse(localStorage.getItem("bagData")) || [];
+// localStorage.setItem("bagData", JSON.stringify(arr2))
+displayData(arr2)
 
-function displayData(bag) {
+function displayData(arr2) {
 
-    bag.map(function (ele, index) {
+    arr2.map(function (ele, index) {
+
         var main = document.createElement("div")
         main.setAttribute("id", "imgdiv")
         var prodImage = document.createElement("img");
@@ -14,13 +16,26 @@ function displayData(bag) {
 
         var prodName = document.createElement("h3");
         prodName.textContent = ele.prodname;
-        prodName.setAttribute("id", "name")
+
 
         var prodPrice = document.createElement("h4");
-        prodPrice.textContent = ele.price;
+        prodPrice.textContent = " $ " + " " + ele.price;
         total.push(ele.price)
 
-        main.append(prodImage, prodName, prodPrice)
+        var remove = document.createElement("button");
+        remove.textContent = "Remove";
+        remove.setAttribute("class", "remove")
+        remove.addEventListener("click", function () {
+            deletetask(index);
+        });
+
+
+        var div2 = document.createElement("div");
+        div2.append(prodName, prodPrice)
+        div2.setAttribute("id", "name-price")
+
+
+        main.append(prodImage, div2, remove)
         document.querySelector("#bagProduct").append(main)
 
     });
@@ -30,4 +45,14 @@ var ttl = total.reduce(function (ac, cv) {
     return Number(ac) + Number(cv);
 })
 document.querySelector("#subtotal_price").textContent = "$ " + ttl;
-document.querySelector("#subtotal_price=").textContent = "$ " + ttl;
+document.querySelector("#continue").addEventListener("click", gotobest);
+
+function gotobest() {
+    window.location.href = "bestsellers.html"
+}
+function deletetask(index) {
+    arr2.splice(index, 1)
+    localStorage.setItem("bagData", JSON.stringify(arr2));
+
+    displayData(arr2)
+}
