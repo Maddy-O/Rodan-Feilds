@@ -2,12 +2,13 @@
 
 var total = [];
 var arr2 = JSON.parse(localStorage.getItem("bagData")) || [];
-// localStorage.setItem("bagData", JSON.stringify(arr2))
+
 displayData(arr2)
 
 function displayData(arr2) {
-
+    document.querySelector("#bagProduct").innerHTML = "";
     arr2.map(function (ele, index) {
+
 
         var main = document.createElement("div")
         main.setAttribute("id", "imgdiv")
@@ -54,5 +55,5 @@ function deletetask(index) {
     arr2.splice(index, 1)
     localStorage.setItem("bagData", JSON.stringify(arr2));
 
-    displayData(arr2)
+    displayData(arr2);
 }
