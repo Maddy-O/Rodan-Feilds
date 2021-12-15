@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 40%;
+
+            margin-top: 50px;
+        }
+
+        #Products>div {
+            width: 100%;
+
+        }
+
+        img {
+            width: 80%;
+            height: 300px;
+            margin: auto;
+        }
+
+        h3 {
+            text-align: center;
+            color: rgba(34, 34, 34, 0.87);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h4 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #757575;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    welocome to cart
+    <div id="Products"></div>
+</body>
+
+</html>
+<script>
+    var bag = JSON.parse(localStorage.getItem("bagData")) || [];
+    displayData(bag)
+
+    function displayData(bag) {
+        bag.map(function (ele, index) {
+            var main = document.createElement("div")
+            var prodImage = document.createElement("img");
+            prodImage.setAttribute("src", ele.prodimage);
+
+            var prodName = document.createElement("h3");
+            prodName.textContent = ele.prodname;
+
+            var prodPrice = document.createElement("h4");
+            prodPrice.textContent = ele.price;
+
+            // var btn = document.createElement("button");
+            // btn.setAttribute("id", "btn")
+            // btn.textContent = "ADD TO BAG";
+            // btn.addEventListener("click", function () {
+            //     addtobag(index);
+            // })
+
+            main.append(prodImage, prodName, prodPrice);
+            document.querySelector("#Products").append(main)
+
+        });
+    }
+</script>
