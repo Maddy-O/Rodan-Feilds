@@ -29,4 +29,5 @@ function displayData(bag) {
 var ttl = total.reduce(function (ac, cv) {
     return Number(ac) + Number(cv);
 })
-console.log(ttl);
+document.querySelector("#subtotal_price").textContent = "$ " + ttl;
+document.querySelector("#subtotal_price=").textContent = "$ " + ttl;
