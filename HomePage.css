@@ -1,0 +1,244 @@
+
+#header{
+    /* border: black solid 1px; */
+    height: 123px;
+    width: 100%;
+    color: #222222;
+    /* background-color: #000000; */
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-variant: normal;
+    /* text-transform: uppercase; */
+    text-decoration: none solid rgb(34, 34, 34);
+    text-align: left;
+    text-indent: 0px;
+    letter-spacing: 1.5px;
+    color: rgb(80, 80, 80);
+}
+.headerdiv{
+    /* border: 1px red solid; */
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    margin-right: 10px;
+    line-height: 24px;
+    align-items:center;
+}
+.leftheader{
+    padding: 10px;
+}
+#logo{
+    width: 100%;
+    left: 0px;
+    height: 25px;
+    position: absolute;;
+    /* left: 0; */
+    width: 100%;
+    text-align: center;
+}
+.headerright{
+    display: flex;
+    margin-left: auto;
+    padding-right: 0.5rem;
+    align-items: flex-end;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    letter-spacing: 0px;
+    color: rgb(80, 80, 80);
+}
+.searchlogo{
+    box-sizing: inherit;
+    height: 15px;
+    margin: 0px 5px 5px 2px;
+}
+.flag{
+    margin-right: 7px;
+}
+.line{
+    /* border: 1px red solid; */
+    margin: auto;
+    height: 1px;
+    background-color: black;
+}
+#pageheader{
+    /* border: 1px red solid; */
+    width: 100%;
+    /* height: 25px; */
+    letter-spacing: 0px;
+}
+.pageheadercontent{
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+.pageheadercontent>ul{
+    display: flex;
+    margin: 0px;
+}
+.pageheadercontent>ul>li{
+    /* border: 1px red solid; */
+    padding:  15px 23px 14px 23px;
+}
+.pageheadercontent>ul>li>span{
+    /* border: 1px red solid; */
+    padding:  15px 0px 15px 0px;
+    line-height: 30px;
+    font-size: 13px;
+    color: rgb(95, 94, 94);
+    cursor: pointer;
+}
+.pageheadercontent>ul>li>span:hover{
+    box-shadow: teal 0px 6px 0px;
+    /* background-color: black; */
+    cursor: pointer;
+}
+#footer{
+    padding: 30px 20px 20px 20px;
+}
+.footcontent{
+    border-top: gray 1px solid;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+ul>li{
+    list-style: none;
+}
+.social{
+    grid-area: 1/4/1/4;
+    font-size: 24px;
+    margin-top: 25px;
+}
+.socialdiv{
+    border: greenyellow 1px solid;
+}
+.social>ul{
+    display: flex;
+    padding: 0px;
+    justify-content: flex-start;
+}
+.social>ul>li{
+    padding: 10px;
+    margin-right: 20px;
+}
+.about{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.about>ul{
+    padding: 0px;
+    margin-top: 5px;
+    justify-content: flex-start;
+}
+.about>ul>li{
+    color: gray;
+    padding: 5px 0px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.help{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.help>ul{
+    padding: 0px;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+.help>ul>li{
+    padding: 5px 0px;
+    font-size: 12px;
+    font-weight: normal;
+    color: gray;
+}
+.copyright{
+    border-top: gray 1px solid;
+    display: flex;
+    grid-area: 2/1/2/5;
+    align-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: gray;
+}
+.copyright>ul{
+    display: flex;
+    padding: 0px;
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+.copyright>ul>li{
+    padding: 0px 10px;
+    line-height: 24px;
+    font-size: 11px;
+}
+.copyright>ul>div{
+    width: 1px;
+    background-color: grey;
+    height: 11px;
+    margin-top: 1%;
+}
+#contentbody{
+    border: 1px solid red;
+    margin: 0px;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+.content{
+    border: 1px solid black;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    padding: 0px;
+}
+.block1{
+    border: blue solid 1px;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/shot-1-best-sellers-homepage-US-Total-rf-serum-0040-0045-V2-3-2-1440x600-progressive.jpg?context=bWFzdGVyfHJvb3R8MjgwNDk3fGltYWdlL2pwZWd8aDVkL2hmMy8xNDE2MTMxMjE4NjM5OC5qcGd8NTRkNWQzYTJmZmQ3YTM2NzkyNDZmMmMxMzMxZGQwYTUyZjQ0M2E0NTEyOTRlZDhjZWQ4YzdhNGQyZjExMDY2Yw);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 600px; */
+    cursor: pointer;
+}
+.image1content{
+    width: 340px;
+    height: 190px;
+    margin: 117px 860px 260px 63px;
+}
+.shopnow{
+    text-align: right;
+}
+a{
+    font-size: 13px;
+    color: #222;
+    border-bottom: solid 1px #222;
+    cursor: pointer;
+}
+.item2div{
+    background-color: white;
+    height: 100%;
+}
+.item2div>:first-child{
+    width: 100%;
+    height: 45%;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/ENFM030-Global-208x208-Mobile.jpg?context=bWFzdGVyfGltYWdlc3w2MTE2fGltYWdlL2pwZWd8aW1hZ2VzL2gzYi9oZDQvMTM2OTM5NjU0Njc2NzguanBnfDgzNDMyMjQ4MDFiZjRhZTNjNmY2Y2NjOTA0ZWYzMzg5NGVjMTIzZjk2Y2MzMWJlZmUzMDgxNzZmMTViOTM4ZmM);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5px;
+}
+.item2div>:first-child>p{
+    padding: 0px 10px;
+    border: 2px solid rgb(218, 217, 217);
+    margin: 5px 15px 0px 140px;
+    font-size: 16px;
+    text-align: right;
+    color: rgb(184, 184, 184);
+}

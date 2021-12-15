@@ -4,154 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEADER</title>
-    <style>
-        #header{
-            height: 130px;
-            width: 100%;
-        }
-        .headerdiv{
-            display: flex;
-            margin-top: 12px;
-            margin-bottom: 12px;
-            margin-right: 10px;
-            line-height: 24px;
-            align-items:center;
-        }
-        .leftheader{
-            padding: 10px;
-        }
-        #logo{
-            width: 100%;
-            left: 0px;
-            height: 25px;
-            position: absolute;;
-            /* left: 0; */
-            width: 100%;
-            text-align: center;
-        }
-        .headerright{
-            display: flex;
-            margin-left: auto;
-            padding-right: 0.5rem;
-            align-items: flex-end;
-        }
-        .search{
-            display: flex;
-            align-items: center;
-            margin-right: 10px;
-        }
-        .searchlogo{
-            box-sizing: inherit;
-            height: 18px;
-            margin: 0px 5px 5px 5px;
-        }
-        .line{
-            margin: auto;
-            height: 1px;
-            background-color: black;
-        }
-        #pageheader{
-            width: 100%;
-            height: 30px;
-            font-size:12px
-        }
-        .pageheadercontent{
-            display: flex;
-            justify-content: center;
-        }
-        .pageheadercontent>div{
-            padding: 18px;
-            line-height: 24px;
-            font-size: 15px;
-        }
-        #footer{
-            padding: 30px 20px 20px 20px;
-        }
-        .footcontent{
-            border-top: gray 1px solid;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-        }
-        ul>li{
-            list-style: none;
-        }
-        .social{
-            grid-area: 1/4/1/4;
-            font-size: 24px;
-            margin-top: 25px;
-        }
-        .socialdiv{
-            border: greenyellow 1px solid;
-        }
-        .social>ul{
-            display: flex;
-            padding: 0px;
-            justify-content: flex-start;
-        }
-        .social>ul>li{
-            padding: 10px;
-            margin-right: 20px;
-        }
-        .about{
-            font-size: 12px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .about>ul{
-            padding: 0px;
-            margin-top: 5px;
-            justify-content: flex-start;
-        }
-        .about>ul>li{
-            color: gray;
-            padding: 5px 0px;
-            font-size: 12px;
-            font-weight: normal;
-        }
-        .help{
-            font-size: 12px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .help>ul{
-            padding: 0px;
-            justify-content: flex-start;
-            margin-top: 5px;
-        }
-        .help>ul>li{
-            padding: 5px 0px;
-            font-size: 12px;
-            font-weight: normal;
-            color: gray;
-        }
-        .copyright{
-            border-top: gray 1px solid;
-            display: flex;
-            grid-area: 2/1/2/5;
-            align-content: center;
-            align-items: center;
-            font-size: 11px;
-            color: gray;
-        }
-        .copyright>ul{
-            display: flex;
-            padding: 0px;
-            margin-left: 10px;
-            justify-content: flex-start;
-        }
-        .copyright>ul>li{
-            padding: 0px 10px;
-            line-height: 24px;
-            font-size: 11px;
-        }
-        .copyright>ul>div{
-            width: 1px;
-            background-color: grey;
-            height: 11px;
-            margin-top: 1%;
-        }
-    </style>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="HomePage.css"/>
 </head>
 <body>
     <header id="header">
@@ -165,17 +19,19 @@
             <div class="headerright">
                 <div class="search">
                     <div>Search</div>
-                    <img class="searchlogo" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-search-ui-dreamstale-lineal-dreamstale.png"/>
+                    <img class="searchlogo" src="https://img.icons8.com/ios/18/000000/search.png"/>
                 </div>
                 <div class="search">
                     <div>Sign in</div>
-                    <img class="searchlogo" src="https://img.icons8.com/ios/50/000000/user--v1.png"/>
+                    <img class="searchlogo" src="https://img.icons8.com/windows/18/000000/gender-neutral-user.png"/>
                 </div>
                 <div class="search">
-                    <div>Bag</div>
+                    <!-- <i class="fas fa-shopping-bag"></i> -->
+                    <img class="searchlogo" src="https://img.icons8.com/ios/18/000000/shopping-bag--v1.png"/>
+                    <!-- <a href="https://icons8.com/icon/47615/shopping-bag"></a> -->
                 </div>
                 <div class="search">
-                    <img class="searchlogo" src="https://img.icons8.com/color/48/000000/usa.png"/>
+                    <img class="flag" src="https://img.icons8.com/color/18/000000/usa.png"/>
                     <div>English</div>
                 </div>
             </div>
@@ -183,23 +39,93 @@
         <div class="line"></div>
         <div id="pageheader">
             <div class="pageheadercontent">
-                <div>SHOP</div>
-                <div>BEST SELLERS</div>
-                <div>FEATURED</div>
-                <div>OUR STORY</div>
-                <div>PERKS PROGRAM</div>
-                <div>BECOME A CONSULTANT</div>
-                <div>BLOG</div>
+                <ul>
+                    <li><span>SHOP
+                    </span></li>
+                    <li><span>BEST SELLERS</span></li>
+                    <li><span>FEATURED</span></li>
+                    <li><span>OUR STORY</span></li>
+                    <li><span>PERKS PROGRAM</span></li>
+                    <li><span>BECOME A CONSULTANT</span></li>
+                    <li><span>BLOG</span></li>
+                </ul>
             </div>
         </div>
     </header>
 
 
 
+    <div id="contentbody">
+        <div class="content">
+            <article class="block1">
+                <div class="image1content">
+                    <h2>From Us, With Love</h2>
+                    <p>Shop Bestsellers + treat your loved ones to life-changing skincare.</p>
+                    <div>
+                        <button>SHOP NOW</button>
+                    </div>
+                </div>
+            </article>
+            <article class="block2">
+                <div class="block2.1" style="margin-bottom: 4rem;">
+                    <div class="shopnow">
+                        <a>Shop Best Sellers</a>
+                    </div>
+                    <div class="firstslider1" style="background-color: #f8f4ee;padding: 5px;">
+                        <ul class="firstsliderlist" style="display: grid;
+                        grid-template-columns: repeat(4,250px); list-style-type: none; font-size: 40px;">
+                            <li class="item1" style="height: 100%; float: left;">
+                                <div>
+                                    <div>
+                                        Discover the life-changing products loved by millions.
+                                    </div>
+                                    <div class="shopnow" style="text-align: left;">
+                                        <a>Shop Best Sellers</a>
+                                    </div>
+                                    <div >
+                                        <img style="width: 100%;" src="https://www.rodanandfields.com/en-us/medias/Best-Sellers-Image-Desktop.jpg?context=bWFzdGVyfHJvb3R8NjA5MTd8aW1hZ2UvanBlZ3xoOTcvaGNkLzEyODg5MTg3ODExMzU4LmpwZ3w2ZGZjZGYxNzg4ZDY2ODI2NzQyZTMyNGI2YmExYmRkNGNjYTBkNGI4MzE5OTIwM2M4M2Q1MGZlMmY1YmFjMDJk">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item2">
+                                <div class="item2div">
+                                    <div>
+                                        <p>Best Seller</p>
+                                        <img>
+                                    </div>
+                                    <div style="font-size: 16px;">Total RF Serum</div>
+                                    <div style="font-size: 14px;">Energizes millions of the surface skin cells by 200% to address all key signs of skin aging.</div>
+                                    <div style="font-size: 16px;">$175</div>
+                                    <div style="font-size: 12px;">Retail Price</div>
+                                    <div style="font-size: 14px;">
+                                        <div>*****</div>
+                                        <span>4.5</span>
+                                        <a>(1339)</a>
+                                    </div>
+                                    <button style="font-size: 16px;">ADD TO BAG</button>
+                                </div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+            </article>
+            <article>
+                
+            </article>
+        </div>
+    </div>
 
 
 
-    
     <footer id="footer">
         <div class="footcontent">
             <div class="social">
