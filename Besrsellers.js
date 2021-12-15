@@ -89,7 +89,7 @@ function displayData(prodata) {
 function addtobag(index) {
     bag.push(prodata[index]);
     // console.log(bag);
-    alert("Added To Cart")
+    alert("Successfuly Added To Cart")
     localStorage.setItem("bagData", JSON.stringify(bag));
 
 }
