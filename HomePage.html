@@ -5,8 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preload" href="/en-us/_ui/dest/fonts/321BD7_1_0.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/en-us/_ui/dest/fonts/DE8E22F5BD5116D3D.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/en-us/_ui/dest/fonts/48A830618C3986410.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/en-us/_ui/dest/fonts/925CAC24B5DF95216.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/en-us/_ui/dest/fonts/GothamHTF-Bold.a295ade8.woff" as="font" type="font/woff" crossorigin="">
+    
+    
+    <style>
+        #header{
+            display: flex;
+            width: 1426px;
+            height: 72px;
+        }
+        #logo{
+            width: 179px;
+            height: 21px;
+        }
+        #header #logo{
+            position: absolute;;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        #header>:first-child{
+            z-index: 0;
+        }
+        #header>:last-child{
+            display: flex;
+            margin-left: auto;
+            padding-right: 0.5rem;
+        }
+        .searchlogo{
+            box-sizing: inherit;
+        }
+        .searchLogo{
+            font-size: 1.6rem;
+            font-style: normal;
+        }
+        .firstimage{
+            display: inline-flex;
+            flex-direction: column;
+            max-width: 80%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Home Page</h1>
+    <header id="header">
+        <div>FIND A CONSULTANT</div>
+        <div>
+            <img id="logo" title="Rodan and Fields" alt="Rodan and Fields" src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA">
+        </div>
+        <div>
+            <div class="searchLogo">
+                Search
+                <img class="searchlogo" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-search-ui-dreamstale-lineal-dreamstale.png"/>
+            </div>
+            <div class="signInLogo">
+                Sign in
+                <img src="https://img.icons8.com/ios/50/000000/user--v1.png"/>
+            </div>
+            <div class="flag">
+                <img src="https://img.icons8.com/color/48/000000/usa.png"/>
+                English
+            </div>
+        </div>
+    </header>
+    <div>
+        <article>
+            <div>
+                <div>
+                    <img src="https://www.rodanandfields.com/en-us/medias/shot-1-best-sellers-homepage-US-Total-rf-serum-0040-0045-V2-3-2-1440x600-progressive.jpg?context=bWFzdGVyfHJvb3R8MjgwNDk3fGltYWdlL2pwZWd8aDVkL2hmMy8xNDE2MTMxMjE4NjM5OC5qcGd8NTRkNWQzYTJmZmQ3YTM2NzkyNDZmMmMxMzMxZGQwYTUyZjQ0M2E0NTEyOTRlZDhjZWQ4YzdhNGQyZjExMDY2Yw" alt="Shop Bestsellers + treat your loved ones to life-changing skincare.">
+                </div>
+                <div class="firstimage">
+                    <h2 class="fisrtimagetitle">From Us, With Love</h2>
+                    <p class="firstimagesubtext">Shop Bestsellers + treat your loved ones to life-changing skincare.</p>
+                    <div><button>SHOP NOW</button></div>
+                </div>
+            </div>
+        </article>
+        <article></article>
+        <article></article>
+    </div>
 </body>
 </html>
