@@ -402,57 +402,135 @@ i{
 
 .article3{
     max-width: 1440px;
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 4rem;
-    padding: 25px;
+    /* padding: 25px; */
 }
 .dermInspired{
-    max-width: 1440px;
-
-    width: 100%;
-    background-color: #f8f4ee;
+    background-color: #f8f4f2;
     padding: 15px;
     text-align: center;
-    justify-items: end;
+    /* justify-items: end; */
 }
 .didiv1>h1{
-    max-width: 1440px;
-
-    width: 100%;
-    border: olive solid 1px;
+    /* border: olive solid 1px; */
     font-weight: 400;
     font-size: 40px;
     color: #222;
     line-height: 1.27;
     letter-spacing: 1px;
+    vertical-align: baseline;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 .didiv2{
-    border: solid greenyellow 1px;
     padding: 0px;
     width: 100%;
-    /* height: 100%; */
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-gap: 15px;
     list-style-type: none;
-    /* font-size: 40px; */
-    /* box-sizing: border-box; */
-    /* padding-right: 15px; */
 }
 .didiv2>div{
-    border: indigo solid 1px;
+    background-color: white;
+    border: rgb(194, 193, 193) solid 2px;
+    border-radius: 5px;
     width: 100%;
-
+    margin-bottom: 40px;
 }
-.didiv2>div>div{
-    border: red solid 1px;
+.diitext{
+    /* border: red solid 1px; */
+    cursor: pointer;
     width: 100%;
-    height: 80%;
+    height: 48px;
+    padding: 12px 0px;
+    margin: 0px;
+    font-size: 16px;
 }
-.didimage{
+.diimage1{
+    /* border: red solid 1px; */
     width: 100%;
-    height: 70%;
-
+    height: 250px;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Fine-Lines-Wrinkles-Card.jpg?context=bWFzdGVyfHJvb3R8NTgzMDF8aW1hZ2UvanBlZ3xoODYvaGY2LzEyODg5MTg4MjA0NTc0LmpwZ3wzYjIwYmU0ZWI3NWZkYjFmNzJjNjVmZWNhYmJmN2RlODdjYjFmNTU0ODZjZWE0YjQ5NWIzNWQzYmQyN2UxZjli);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.didimage>img{
-} 
+.diimage1:hover{
+    cursor: pointer;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Category-Image-1.png?context=bWFzdGVyfHJvb3R8MzcxNDI1fGltYWdlL3BuZ3xoOGIvaDJiLzEzOTAwNTk3MTMzMzQyLnBuZ3w5NTMwMDY2NDkxOTRmNDI1Mjc5ZjIyOTYxYjUyZTFiNDkyNDZhODZmNTJlZmQ4ZjU4NzBmZjI2NzFiMzhmZTMy);
+}
+.diimage2{
+    /* border: red solid 1px; */
+    width: 100%;
+    height: 250px;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Acne-Breakouts-Card.jpg?context=bWFzdGVyfHJvb3R8NjU4Mjd8aW1hZ2UvanBlZ3xoMTEvaDJhLzEyODg5MTg4MjcwMTEwLmpwZ3wxMTg2NjQ4NjM0Y2QyZDY4MDdmZDU4ZmI0ZDkxMTlhM2UxMDgyYTFkMGVkOWMzMTBkYzY3ZTJmNGEzNzVlZDhm);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.diimage2:hover{
+    cursor: pointer;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Category-Image-2.png?context=bWFzdGVyfHJvb3R8Mzg1Mjk1fGltYWdlL3BuZ3xoOGUvaGI2LzEzOTAwNTk3MTk4ODc4LnBuZ3xmYzY3MThiYTcyZTNiMjhjNTI4MGZjNTUxMTY5OTgwNjFhMWQzM2Y0ZWQyZjJjMTUwOGEwYjBmM2Y1NjVlMTI3);
+}
+.diimage3{
+    /* border: red solid 1px; */
+    width: 100%;
+    height: 250px;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Uneven-Tone-Brown-Spots-Card.jpg?context=bWFzdGVyfHJvb3R8NTc4OTV8aW1hZ2UvanBlZ3xoY2UvaDY0LzEyODg5MTg4MzM1NjQ2LmpwZ3w0ZjUyN2U3MWE1YzYwNmNmYzgxZTQ3MTAxNmU3ZGIyNjA4NmU1MTQ2Mjc4NWU2NWRhOTFmNDU3NGRmNmI0MDFi);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.diimage3:hover{
+    cursor: pointer;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Category-Image-3.png?context=bWFzdGVyfHJvb3R8MzU2OTI0fGltYWdlL3BuZ3xoNDMvaGJkLzEzOTAwNTk3MjY0NDE0LnBuZ3xhMWMzNDBiMGI0MWJmNjkwMDk2NDc0NGMxMjc4ZjljYzMzODYyYTRmNGUyNjFiYjZlOWZhOWM4ZmUzYTFjZmYz);
+}
+.diimage4{
+    /* border: red solid 1px; */
+    width: 100%;
+    height: 250px;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Sensitivity-Visible-Redness-Card.jpg?context=bWFzdGVyfHJvb3R8NjE5MTd8aW1hZ2UvanBlZ3xoNTgvaGM3LzEyODg5MTg4NDAxMTgyLmpwZ3wwN2M4ZTJmMGExMDI1ZTM2MjE4M2I3MzFlZWI5NDJkZDYzZmMzMDdhMDMyNGFjODUyY2MwMWUzMDk5MDVjZWZk);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.diimage4:hover{
+    cursor: pointer;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Category-Image-4.png?context=bWFzdGVyfHJvb3R8MzEzMzg3fGltYWdlL3BuZ3xoYjIvaDMwLzEzOTAwNTk3MzI5OTUwLnBuZ3xlOGYwOTgwZmYxNWIzNGVhNjZiN2I1NGI0NWVmZTFhOGQwYmJlOGMzZjE5NzA4ODRjNjZlMzliZDAzZjVhNDk0);
+}
+.diimage5{
+    /* border: red solid 1px; */
+    width: 100%;
+    height: 250px;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Dry-Skin-Card.jpg?context=bWFzdGVyfHJvb3R8NjY4Mjl8aW1hZ2UvanBlZ3xoZTkvaDJjLzEyODg5MTg4NDY2NzE4LmpwZ3w2M2M5MDI0YzI3ZTgyNDIxZmE0MTZmNGJiMWU5ZGZhZDM0NzQ3NmJhNDUxY2MyMTZjNjk4NDQ4NTAxMDk1MDNj);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.diimage5:hover{
+    cursor: pointer;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Category-Image-5.png?context=bWFzdGVyfHJvb3R8MjU0NDM1fGltYWdlL3BuZ3xoYjAvaGY4LzEzOTAwNTk3Mzk1NDg2LnBuZ3xlMmE5ZWIyN2YyYTVjZjZiZTVkZmUyZjJjODhmY2Q5MTdmMWM0NWQ1NTQ4MzFmZjM3YjUyNWI3M2NhYjI3ZTll);
+}
+.diimage6{
+    /* border: red solid 1px; */
+    width: 100%;
+    height: 250px;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Eyes-Lips-Lashes-Card.jpg?context=bWFzdGVyfHJvb3R8ODY2MjZ8aW1hZ2UvanBlZ3xoZjAvaGE2LzEyODg5MTg4NTMyMjU0LmpwZ3w2ZmNiOWQwNjJhNGZlYjViMjA2MDhiYTlmN2JlMDU2M2NkMmNlMzJjNzU5ZmQ5ZWQxZTRkZmEwZGY3MDBhNjgy);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.diimage6:hover{
+    cursor: pointer;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Category-Image-6.png?context=bWFzdGVyfHJvb3R8Mzc1MzQ5fGltYWdlL3BuZ3xoMjEvaDdiLzEzOTAwNTk3NDYxMDIyLnBuZ3xkNjNjZjczZWMzYzM4MDIyMjA1NzIwOTgwZDM0YTU4MGIzMmY1YmZlZGM2Y2I5ODdmZWU4NDEzMjAxOTgxZGY0);
+}
+.didiv3>button{
+    padding: 15px 100px;
+    font-size: 15px;
+    background-color: transparent;
+    border: black 1px solid;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 50px;
+}
