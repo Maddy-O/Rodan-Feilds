@@ -7,7 +7,7 @@
         #head1{
             font-size: 18px;
             margin: auto;
-            /* grid-gap: 20px; */
+            grid-gap: 20px;
             display: grid;
             grid-template-columns:repeat(12,1fr);
             grid-template-rows: repeat(1,60px);
@@ -90,6 +90,14 @@
         width: 400px;
         border-radius: 20px;
         border: 1px solid black;
+        }
+
+         @media only screen and (min-width:768px) and (max-width:1900px){
+            #container{
+                grid-template-columns: repeat(12,1fr);
+                grid-template-areas: 
+                "a a a a a b b b b b b b";
+            }
         }
         @media only screen and (min-width:375px) and (max-width:768px){
             #container{
