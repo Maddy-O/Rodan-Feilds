@@ -8,7 +8,6 @@
     function signUp(){
         window.location.href='joinnow.html';
     }
-
     var acc = document.getElementsByClassName("accordion");
 var i;
 
