@@ -200,18 +200,38 @@ ul>li{
     padding: 0px;
 }
 .block1{
+    /* max-width: 1440px;
+    width: 100%; */
     border: blue solid 1px;
     background-image: url(https://www.rodanandfields.com/en-us/medias/shot-1-best-sellers-homepage-US-Total-rf-serum-0040-0045-V2-3-2-1440x600-progressive.jpg?context=bWFzdGVyfHJvb3R8MjgwNDk3fGltYWdlL2pwZWd8aDVkL2hmMy8xNDE2MTMxMjE4NjM5OC5qcGd8NTRkNWQzYTJmZmQ3YTM2NzkyNDZmMmMxMzMxZGQwYTUyZjQ0M2E0NTEyOTRlZDhjZWQ4YzdhNGQyZjExMDY2Yw);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 600px; */
     cursor: pointer;
+    margin-bottom: 20px;
 }
 .image1content{
     width: 340px;
     height: 190px;
     margin: 117px 860px 260px 63px;
 }
+.image1content>h2{
+    letter-spacing: 0px;
+    word-spacing: -4px;
+    font-size: 40px;
+}
+.image1content>p{
+    font-size: 18px;
+    width: 100%;
+}
+.image1content>div>button{
+    width: 100%;
+    padding: 10px;
+    border: black 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* ----------------------Article-1--------------- */
 .shopnow{
     text-align: right;
 }
@@ -221,9 +241,32 @@ a{
     border-bottom: solid 1px #222;
     cursor: pointer;
 }
-.item2div{
+.firstslider1{
+    background-color: #f8f4ee;
+    padding: 5px 0px;
+}
+.firstsliderlist{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+    list-style-type: none;
+    font-size: 40px;
+    padding-right: 15px;
+}
+li{
+    /* border: green 1px solid; */
     background-color: white;
+}
+.item1{
     height: 100%;
+    float: left;
+    background-color: #f8f4ee;
+
+}
+.item2div{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    height: 100%;
+    padding: 10px;
 }
 .item2div>:first-child{
     width: 100%;
@@ -237,8 +280,179 @@ a{
 .item2div>:first-child>p{
     padding: 0px 10px;
     border: 2px solid rgb(218, 217, 217);
-    margin: 5px 15px 0px 140px;
+    margin: 10px 20px 0px 200px;
+    font-size: 15px;
+    /* text-align: right; */
+    color: rgb(184, 184, 184);
+}
+.itemname{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    margin-bottom: 10px;
+}
+.itemdescription{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 20px 0px;
+}
+.itemprice{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 15px 0px 5px 0px;
+}
+.itempricedesc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px 0px 15px 0px;
+}
+.itemrating{
+    display: flex;
+}
+.itemrating>div{
+    margin-right: 10px;
+    padding: 1px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+i{
+    width: 2px;
+    margin-right: 9px;
+}
+.itemrating>span{
+    font-size: 14px;
+}
+.item2div>button{
+    width: 100%;
+    padding: 5px 0px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: gray 0px 2px 2px ;
+    cursor: pointer;
+}
+.item2div>button:hover{
+    box-shadow: gray 0px 0px 0px ;
+}
+.item3div>:first-child{
+    width: 100%;
+    height: 45%;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/ENHLSH01-458x458.jpg?context=bWFzdGVyfGltYWdlc3w0MDkxfGltYWdlL2pwZWd8aW1hZ2VzL2gzNS9oODgvMTM5Nzc1NDQ2ODc2NDYuanBnfDlmYTEwMTFkMjFiNzMwYjlhNjU0NTNiYjU5ZDBmMGY3ZWIzNmNiZmYwMTJhMGYzMTFkMzA1ODhkOGI1MjdlMmE);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5px;
+}
+.item3div>:first-child>p{
+    padding: 0px 10px;
+    border: 2px solid rgb(218, 217, 217);
+    margin: 10px 20px 0px 200px;
+    font-size: 15px;
     text-align: right;
     color: rgb(184, 184, 184);
 }
+.item3div{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    height: 100%;
+    padding: 10px;
+}
+.item3div>button{
+    width: 100%;
+    padding: 5px 0px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: gray 0px 2px 2px ;
+    cursor: pointer;
+}
+.item3div>button:hover{
+    box-shadow: gray 0px 0px 0px ;
+}
+.item4div>:first-child{
+    width: 100%;
+    height: 45%;
+    background-image: url(https://www.rodanandfields.com/en-us/medias/AAEY015-458x458.jpg?context=bWFzdGVyfGltYWdlc3wxMDQ2OHxpbWFnZS9qcGVnfGltYWdlcy9oMDYvaDljLzEzOTc3NTQ0NDI1NTAyLmpwZ3xiNzQ3NjJkOWU1Y2QxOWM5ZDQ4ZGQzZDA1ZjdkNzBhZmRhMjdkYzE5MTU0MWZiZjY5MDc3NzEyMjBkM2E1YThj);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5px;
+}
+.item4div>:first-child>p{
+    padding: 0px 10px;
+    border: 2px solid rgb(218, 217, 217);
+    margin: 10px 20px 0px 200px;
+    font-size: 15px;
+    text-align: right;
+    color: rgb(184, 184, 184);
+}
+.item4div{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    height: 100%;
+    padding: 10px;
+}
+.item4div>button{
+    width: 100%;
+    padding: 5px 0px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: gray 0px 2px 2px ;
+    cursor: pointer;
+}
+.item4div>button:hover{
+    box-shadow: gray 0px 0px 0px ;
+}
+/* -----------------Article-3----------------------- */
+
+.article3{
+    max-width: 1440px;
+    width: 100%;
+    margin-bottom: 4rem;
+    padding: 25px;
+}
+.dermInspired{
+    max-width: 1440px;
+
+    width: 100%;
+    background-color: #f8f4ee;
+    padding: 15px;
+    text-align: center;
+    justify-items: end;
+}
+.didiv1>h1{
+    max-width: 1440px;
+
+    width: 100%;
+    border: olive solid 1px;
+    font-weight: 400;
+    font-size: 40px;
+    color: #222;
+    line-height: 1.27;
+    letter-spacing: 1px;
+}
+.didiv2{
+    border: solid greenyellow 1px;
+    padding: 0px;
+    width: 100%;
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-gap: 15px;
+    list-style-type: none;
+    /* font-size: 40px; */
+    /* box-sizing: border-box; */
+    /* padding-right: 15px; */
+}
+.didiv2>div{
+    border: indigo solid 1px;
+    width: 100%;
+
+}
+.didiv2>div>div{
+    border: red solid 1px;
+    width: 100%;
+    height: 80%;
+}
+.didimage{
+    width: 100%;
+    height: 70%;
+
+}
+.didimage>img{
+} 
