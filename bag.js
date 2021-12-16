@@ -12,6 +12,7 @@ function displayData(arr2) {
 
         var main = document.createElement("div")
         main.setAttribute("id", "imgdiv")
+
         var prodImage = document.createElement("img");
         prodImage.setAttribute("src", ele.prodimage);
 
@@ -22,6 +23,16 @@ function displayData(arr2) {
         var prodPrice = document.createElement("h4");
         prodPrice.textContent = " $ " + " " + ele.price;
         total.push(ele.price)
+
+        var pbtn = document.createElement("button");
+        pbtn.textContent = "+";
+
+        var nbtn = document.createElement("button");
+        nbtn.textContent = "-";
+
+        var quty = document.createElement("span");
+        quty.textContent = 0;
+
 
         var remove = document.createElement("button");
         remove.textContent = "Remove";
@@ -56,4 +67,6 @@ function deletetask(index) {
     localStorage.setItem("bagData", JSON.stringify(arr2));
     window.location.reload();
     displayData(arr2);
-}
+};
+
+localStorage.setItem("bag_length", JSON.stringify(arr2.length));

@@ -60,9 +60,11 @@ localStorage.setItem("ProductData", JSON.stringify(arr));
 var prodata = JSON.parse(localStorage.getItem("ProductData"));
 
 var bag = JSON.parse(localStorage.getItem("bagData")) || [];
-displayData(prodata);
 
+displayData(prodata);
 function displayData(prodata) {
+    document.querySelector("#Products").innerHTML = "";
+
     prodata.map(function (ele, index) {
         var main = document.createElement("div")
         var prodImage = document.createElement("img");
@@ -84,6 +86,7 @@ function displayData(prodata) {
         main.append(prodImage, prodName, prodPrice, btn);
         document.querySelector("#Products").append(main)
 
+
     });
 }
 function addtobag(index) {
@@ -103,13 +106,21 @@ function sort() {
     // console.log(selected);
     if (selected === "low") {
         prodata.sort(function (a, b) {
-            return Number(a.prodPrice) - Number(b.prodPrice);
+            return Number(a.price) - Number(b.price);
         });
     }
     if (selected === "high") {
         prodata.sort(function (a, b) {
-            return Number(b.prodPrice) - Number(a.prodPrice);
+            return Number(b.price) - Number(a.price);
         });
     }
     displayData(prodata);
+
 }
+
+
+///// bag Length part
+var bagLength = JSON.parse(localStorage.getItem("bag_length"))
+console.log(bagLength)
+
+document.querySelector("#bag1").textContent = bagLength
