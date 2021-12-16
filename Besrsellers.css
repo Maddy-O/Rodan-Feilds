@@ -98,6 +98,19 @@ h4{
 #end{
     margin-top: 100px;
 }
+label{
+    font-size: 20px;
+    margin: 20px;
+}
+#price-sort{
+    width: 100px;
+    height: 40px;
+    margin: 20px
+}
+option{
+    font-size: 20px;
+}
+
 @media only screen and (min-width:376px) and (max-width:768px) {
     #Products {
         grid-template-columns: repeat(2, 100%);

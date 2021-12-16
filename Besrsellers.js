@@ -97,3 +97,19 @@ document.querySelector("#bag1").addEventListener("click", opencart);
 function opencart() {
     window.location.href = "bag.html";
 }
+
+function sort() {
+    var selected = document.querySelector("#price-sort").value;
+    // console.log(selected);
+    if (selected === "low") {
+        prodata.sort(function (a, b) {
+            return Number(a.prodPrice) - Number(b.prodPrice);
+        });
+    }
+    if (selected === "high") {
+        prodata.sort(function (a, b) {
+            return Number(b.prodPrice) - Number(a.prodPrice);
+        });
+    }
+    displayData(prodata);
+}
