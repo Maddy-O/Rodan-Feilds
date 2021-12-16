@@ -3,11 +3,33 @@ border: 1px solid transparent;
 margin: auto;
 text-align: center;
 margin-bottom: 50px;
+
+}
+div:nth-child(1){
+    border: 1px solid transparent;
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
 }
 #heading{
+    color: grey;
+     border: 1px solid transparent; 
+     font-size: 50px;  
+     border: 1px solid transparent; 
+     text-align: center;
+     font-family: 'Noto Serif TC', serif;
     
-     border: 1px solid transparent;    
  }
+#heading>img{
+    display: inline;
+    margin-top: 25px;
+    margin-left: 80px;
+    width: 8%;
+    color: grey;
+    border: 1px solid transparent;
+
+}
+ 
  #headingdes{
      word-spacing: 2px;
      line-height: 20px;
@@ -16,6 +38,7 @@ margin-bottom: 50px;
      margin: auto;
      text-align: center;
      font-size: 15px;
+     color: rgb(92, 92, 92);
 
  }
 
@@ -250,13 +273,67 @@ img{
   .contactDetails{
       margin-top: 10px;
       text-align: center;
+      margin-bottom: 40px;
   }
   a{
       color: rgb(97, 197, 236);
-      font-size: 20px;
+      font-size: 15px;
   }
   .already{
       font-size: 25px;
   }
+/* next content */
+
+  .accordion{   
+      background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+    
+  }
+  .accordion {
+    cursor: pointer;
+    padding: 0px 10px;
+    width: 100%;
+    border: 1px solid grey;
+    border-right: none;
+    border-left: none;
+    text-align: left;
+    outline: none;
+    font-size: 12px;
+    transition: 0.4s;
+    border-bottom: none; 
+  }
+  .accordion:after {
+    content: '\002B';
+    float: right;
+    margin-left: 5px;
+     margin-top: 15px;
+     font-family: HCoGothamSSmRegular, Arial, sans-serif;
+    font-size: 20px; 
+  }
+  .fandq{
+      width: 50%;
+      margin: auto;
+
+  }
+  
+  .active:after {
+    content: "\2212";
+    
+   
+  }
   
   
+  .panel {
+   font-size: 14px;
+   color: rgb(66, 66, 66);
+    border-top: none;
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+ 
