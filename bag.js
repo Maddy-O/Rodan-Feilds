@@ -54,6 +54,6 @@ function gotobest() {
 function deletetask(index) {
     arr2.splice(index, 1)
     localStorage.setItem("bagData", JSON.stringify(arr2));
-
+    window.location.reload();
     displayData(arr2);
 }

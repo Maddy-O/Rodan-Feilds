@@ -25,6 +25,7 @@ h1{
     width: 38%;
     border: 1px solid black;
     margin-top: 20px;
+    border-radius: 15px;
 }
 #imgdiv{
   
@@ -32,6 +33,7 @@ h1{
     width: 100%;
     display: flex;
     border: 1px solid gray;
+    border-radius: 15px;
 
 }
 img{
@@ -58,6 +60,7 @@ button{
     padding: 10px;
     background-color: black;
     color: white;
+    border-radius: 15px;
 }
 #order{
     width: 100%;
@@ -111,6 +114,24 @@ input{
    margin-left: auto;
    margin-top: auto;
    background-color: indigo;
+}
+@media only screen and (min-width:376px) and (max-width:768px) {
+    #Products {
+       flex-direction: column;
+  
+       height: 500px;
+       width: 100%;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:375px) {
+    #Products {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(2,400px);
+       height: 500px;
+       width: 100%;
+    }
 }
 
 
