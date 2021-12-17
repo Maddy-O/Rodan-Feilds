@@ -8,16 +8,14 @@
     <script src="https://kit.fontawesome.com/96bcaae285.js" crossorigin="anonymous"></script>
     <style>
         #header{
-            height: 130px;
+            height: 123px;
             width: 100%;
             color: #222222;
-            /* background-color: #000000; */
             font-family: Arial, sans-serif;
             font-size: 12px;
             font-weight: 300;
             font-style: normal;
             font-variant: normal;
-            /* text-transform: uppercase; */
             text-decoration: none solid rgb(34, 34, 34);
             text-align: left;
             text-indent: 0px;
@@ -26,8 +24,8 @@
         }
         .headerdiv{
             display: flex;
-            margin-top: 15px;
-            margin-bottom: 12px;
+            margin-top: 12px;
+            margin-bottom: 14px;
             margin-right: 10px;
             line-height: 24px;
             align-items:center;
@@ -39,8 +37,7 @@
             width: 100%;
             left: 0px;
             height: 25px;
-            position: absolute;;
-            /* left: 0; */
+            position: absolute;
             width: 100%;
             text-align: center;
         }
@@ -72,18 +69,31 @@
         }
         #pageheader{
             width: 100%;
-            height: 30px;
             letter-spacing: 0px;
         }
         .pageheadercontent{
             display: flex;
             justify-content: center;
+            padding: 0px;
         }
-        .pageheadercontent>span{
-            padding:  20px 23px;
-            line-height: 24px;
+        .pageheadercontent>ul{
+            display: flex;
+            margin: 0px;
+            list-style-type: none;
+        }
+        .pageheadercontent>ul>li{
+            padding:  15px 23px 14px 23px;
+        }
+        .pageheadercontent>ul>li>span{
+            padding:  15px 0px 15px 0px;
+            line-height: 30px;
             font-size: 13px;
             color: rgb(95, 94, 94);
+            cursor: pointer;
+        }
+        .pageheadercontent>ul>li>span:hover{
+            box-shadow: teal 0px 6px 0px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -106,7 +116,6 @@
                     <img class="searchlogo" src="https://img.icons8.com/windows/18/000000/gender-neutral-user.png"/>
                 </div>
                 <div class="search">
-                    <!-- <i class="fas fa-shopping-bag"></i> -->
                     <img class="searchlogo" src="https://img.icons8.com/ios/18/000000/shopping-bag--v1.png"/>
                     <!-- <a href="https://icons8.com/icon/47615/shopping-bag"></a> -->
                 </div>
@@ -119,13 +128,16 @@
         <div class="line"></div>
         <div id="pageheader">
             <div class="pageheadercontent">
-                <span>SHOP</span>
-                <span>BEST SELLERS</span>
-                <span>FEATURED</span>
-                <span>OUR STORY</span>
-                <span>PERKS PROGRAM</span>
-                <span>BECOME A CONSULTANT</span>
-                <span>BLOG</span>
+                <ul>
+                    <li><span>SHOP
+                    </span></li>
+                    <li><span>BEST SELLERS</span></li>
+                    <li><span>FEATURED</span></li>
+                    <li><span>OUR STORY</span></li>
+                    <li><span>PERKS PROGRAM</span></li>
+                    <li><span>BECOME A CONSULTANT</span></li>
+                    <li><span>BLOG</span></li>
+                </ul>
             </div>
         </div>
     </header>

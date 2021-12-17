@@ -80,6 +80,7 @@
 .pageheadercontent>ul{
     display: flex;
     margin: 0px;
+    list-style-type: none;
 }
 .pageheadercontent>ul>li{
     /* border: 1px red solid; */
@@ -98,6 +99,11 @@
     /* background-color: black; */
     cursor: pointer;
 }
+
+
+/* ---FOOTER---- */
+
+
 #footer{
     padding: 30px 20px 20px 20px;
 }
@@ -192,7 +198,7 @@ ul>li{
     margin: auto;
 }
 .content{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: auto;
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -440,10 +446,12 @@ i{
 }
 .diitext{
     /* border: red solid 1px; */
+    padding: 12px 0px;
+    height: 48px;
+}
+.diitext>p{
     cursor: pointer;
     width: 100%;
-    height: 48px;
-    padding: 12px 0px;
     margin: 0px;
     font-size: 16px;
 }
@@ -533,4 +541,217 @@ i{
     border-radius: 5px;
     color: black;
     margin-bottom: 50px;
+}
+
+
+/* ----Article-4---- */
+
+
+.article4{
+    max-width: 1440px;
+    /* height: 372px; */
+}
+.article4content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+    padding: 0px 15px 0px 15px;
+}
+
+/*  Article-4-content-1 */
+
+.article4content1{
+    /* border: brown solid 1px; */
+    background-color: rgb(244, 239, 231);
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.article4textcontent{
+    width: 50%;
+    padding: 15px;
+    padding: 34px 0px 10px 44px;
+}
+.article4textcontent>:first-child{
+    width: 300px;
+    /* border: green solid 1px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+.article4textcontent>:nth-child(2){
+    width: 300px;
+    /* border: green solid 1px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    margin: 24px 0px 40px 0px;
+}
+.article4textcontent>:last-child{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.article4imagecontent1{
+    /* border: green solid 1px; */
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Homepage-PromoModule-MFEC-Desktop.jpg?context=bWFzdGVyfHJvb3R8MzgyNDU0fGltYWdlL2pwZWd8aDJjL2hkZi8xMzg1NDY1ODIzMjM1MC5qcGd8YjQwNjFlZTlkMDUwNTM2ZDUxZTI2YzE5ZmFhMzM4ZjlkYmQxMTNhNDg2NzJjMDc5NzhmNTEzMTYzYWY5NGI2NA);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+/*  Article-4-content-2 */
+
+.article4content2{
+    /* border: brown solid 1px; */
+    background-color: rgb(205, 226, 199);
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.article4textcontent{
+    width: 50%;
+    padding: 15px;
+    padding: 34px 0px 10px 44px;
+}
+.article4textcontent>:first-child{
+    width: 300px;
+    /* border: green solid 1px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+.article4textcontent>:nth-child(2){
+    width: 300px;
+    /* border: green solid 1px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    margin: 24px 0px 40px 0px;
+}
+
+.article4imagecontent2{
+    /* border: green solid 1px; */
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Promo-Self-Care.jpg?context=bWFzdGVyfHJvb3R8Mzk2NjI0fGltYWdlL2pwZWd8aGQzL2gzNC8xMjg4OTE4ODc5NDM5OC5qcGd8NzIxN2Y5NThiZWNlYmM4MDUwYTIzM2YyM2FlMDRiOGY1YTAzNTdkYjk1ZjNjMmZiNTlmNmY2MTdkYTA4ODJmMQ);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.article4line{
+    /* border: solid black 1px; */
+    /* height: 50px; */
+    /* margin-bottom: 20px; */
+    /* background-color: saddlebrown; */
+    padding: 10px 15px;
+    display: flex;
+}
+.article4line>:first-child{
+    width: 65%;
+    background-color: gray;
+    height: 5px;
+    margin: 0px;
+}
+.article4line>:last-child{
+    width: 35%;
+    background-color: rgb(211, 211, 211);
+    height: 5px;
+    margin: 0px;
+
+}
+
+/* ----Article-5---- */
+
+.article5{
+    max-width: 1440px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #faf6f5;
+}
+.article5image{
+    background-image: url(https://www.rodanandfields.com/en-us/medias/Brand-Story-Image-Desktop.jpg?context=bWFzdGVyfHJvb3R8MTQ2MTQ2fGltYWdlL2pwZWd8aDlkL2g1Mi8xMjg4OTE4Nzg3Njg5NC5qcGd8OTJhOWZiNTkxMjNjMTI4NDdkYTU2MTIxYzM5MDEzZTQxNzVmOWNlOWRiZmVmNmI0ZWI0NDY4MDRmMzRlODY1YQ);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: 1/1/1/4;
+    height: 470px;
+}
+.article5text1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 52px 140px 52px 195px;
+}
+.article5text1>div{
+    /* border: solid black 1px; */
+    padding: 65px 24px 0px 24px;
+}
+.article5text1>div>:first-child{
+    /* border: solid red 1px; */
+    font-size: 30px;
+}
+.article5text1>div>p{
+    /* border: solid green 1px; */
+    font-size: 18px;
+}
+.article5text1>div>:last-child{
+    /* border: solid yellow 1px; */
+    font-size: 16px;
+}
+
+
+/* ----Article-6---- */
+
+
+.article6{
+    max-width: 1440px;
+    /* margin-top: 20px; */
+    margin-bottom: 40px;
+    padding: 32px 141px 32px 141px;
+    background-color: rgb(225, 234, 241);
+}
+.article6content{
+    padding: 14px 32px 14px 32px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px;
+    background-color: white;
+}
+.article6content>:first-child{
+    text-align: center;
+    font-size: 30px;
+    font-stretch: 100%;
+    padding: 0px 0px 0px 40px;
+}
+.article6content>:nth-child(2){
+    margin: 0px 24px px -37px;
+    font-size: 16px;
+    font-stretch: 100%;
+}
+.article6content>:last-child{
+    margin: 0px 0px 16px 0px;
+}
+.article6content>:last-child>button{
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: gray 0px 2px 2px;
+    padding: 10px 16px 10px 16px;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    justify-items: center;
+}
+.article6content>:last-child>button:hover{
+    box-shadow: white 0px 2px 2px;
 }
