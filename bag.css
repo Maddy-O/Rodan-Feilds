@@ -145,7 +145,7 @@ input{
     color: white;
     cursor: pointer;
 
-
+}
 
 @media only screen and (min-width:0px) and (max-width:378px) { 
     #Products {
@@ -154,5 +154,5 @@ input{
     
        
     }
-  
- }
+
+}
