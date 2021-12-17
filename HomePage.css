@@ -123,7 +123,7 @@ ul>li{
     margin-right: 20px;
 }
 .about{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -135,11 +135,11 @@ ul>li{
 .about>ul>li{
     color: gray;
     padding: 5px 0px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: normal;
 }
 .help{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -150,7 +150,7 @@ ul>li{
 }
 .help>ul>li{
     padding: 5px 0px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: normal;
     color: gray;
 }
@@ -160,7 +160,7 @@ ul>li{
     grid-area: 2/1/2/5;
     align-content: center;
     align-items: center;
-    font-size: 11px;
+    font-size: 15px;
     color: gray;
 }
 .copyright>ul{
@@ -172,7 +172,7 @@ ul>li{
 .copyright>ul>li{
     padding: 0px 10px;
     line-height: 24px;
-    font-size: 11px;
+    font-size: 15px;
 }
 .copyright>ul>div{
     width: 1px;
@@ -247,9 +247,10 @@ ul>li{
 /* ----------------------Article-1--------------- */
 .shopnow{
     text-align: right;
+    margin-bottom: 10px;
 }
 a{
-    font-size: 13px;
+    font-size: 15px;
     color: #222;
     border-bottom: solid 1px #222;
     cursor: pointer;
@@ -418,17 +419,18 @@ i{
     /* background-color: saddlebrown; */
     padding: 10px 15px;
     display: flex;
+    margin-top: 15px;
 }
 .article2line>:first-child{
     width: 50%;
     background-color: gray;
-    height: 5px;
+    height: 4px;
     margin: 0px;
 }
 .article2line>:last-child{
     width: 50%;
     background-color: rgb(211, 211, 211);
-    height: 5px;
+    height: 4px;
     margin: 0px;
 }
 

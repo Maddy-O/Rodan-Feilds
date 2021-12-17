@@ -69,7 +69,7 @@
                     </div>
                 </div>
             </article>
-            <article class="block2">
+            <article class="block2" style="margin-top: 4rem;">
                 <div class="block2.1" style="margin-bottom: 4rem;">
                     <div class="shopnow">
                         <a>Shop Best Sellers</a>
@@ -316,117 +316,125 @@
 
 <!-- FOOTER -->
 
-    <footer id="footer">
-        <div class="footcontent">
-            <div class="social">
-                <div class="sociladiv">Let's Get Social</div>
-                <ul>
-                    <li>
-                    <i class="fab fa-facebook-f"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-twitter"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-instagram"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-youtube"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-pinterest-p"></i>
-                    </li>
-                </ul>
-            </div>
-            <div class="about">
-                <div>About R+F</div>
-                <ul>
-                    <li>Press Room</li>
-                    <li>Company Info</li>
-                    <li>Executive Team</li>
-                    <li>Careers</li>
-                    <li>R+F Recycling Program</li>
-                    <li>Blog</li>
-                </ul>
-            </div>
-            <div class="help">
-                <div>Help</div>
-                <ul>
-                    <li>Product & Help Center</li>
-                    <li>Shipping</li>
-                    <li>Satisfaction Guarantee</li>
-                    <li>Promorional Terms & Conditions</li>
-                    <li>R+F Facts</li>
-                    <li>Klarna</li>
-                    <li>Site Map</li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <div>© 2021 Rodan & Fields</div>
-                <ul>
-                    <li>Privacy Policy</li>
-                    <div></div>
-                    <li>Terms & Conditions</li>
-                    <div></div>
-                    <li>Accessibility</li>
-                    <div></div>
-                    <li>California Supply Chains Act</li>
-                    <div></div>
-                    <li>DSA Code Of Ethics</li>
-                    <div></div>
-                    <li>Disclaimer</li>
-                    <div></div>
-                    <li>Preference Center</li>
-                </ul>
-            </div>
+<footer id="footer">
+    <div class="footcontent">
+        <div class="social">
+            <div class="sociladiv">Let's Get Social</div>
+            <ul>
+                <li onclick="fb()"><i class="fab fa-facebook"></i></li>
+                <li onclick="twit()"><i class="fab fa-twitter"></i></li>
+                <li onclick="insta()"><i class="fab fa-instagram"></i></li>
+                <li onclick="you()"><i class="fab fa-youtube"></i></li>
+                <li onclick="pinte()"><i class="fab fa-pinterest-p"></i></li>
+            </ul>
         </div>
-    </footer>
+        <div class="about">
+            <div>About R+F</div>
+            <ul>
+                <li>Press Room</li>
+                <li>Company Info</li>
+                <li>Executive Team</li>
+                <li>Careers</li>
+                <li>R+F Recycling Program</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div class="help">
+            <div>Help</div>
+            <ul>
+                <li>Product & Help Center</li>
+                <li>Shipping</li>
+                <li>Satisfaction Guarantee</li>
+                <li>Promorional Terms & Conditions</li>
+                <li>R+F Facts</li>
+                <li>Klarna</li>
+                <li>Site Map</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <div>© 2021 Rodan & Fields</div>
+            <ul>
+                <li>Privacy Policy</li>
+                <div></div>
+                <li>Terms & Conditions</li>
+                <div></div>
+                <li>Accessibility</li>
+                <div></div>
+                <li>California Supply Chains Act</li>
+                <div></div>
+                <li>DSA Code Of Ethics</li>
+                <div></div>
+                <li>Disclaimer</li>
+                <div></div>
+                <li>Preference Center</li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 <script>
-    var responsiveSlider = function() {
-        var slider = document.getElementsByClassName("article6slider");
-        var sliderWidth = slider.offsetWidth;
-        var slideList = document.getElementsByClassName("slideWrap");
-        var count = 1;
-        var items = slideList.getElementsByClassName("li").length;
-        var prev = document.getElementById("prev");
-        var next = document.getElementById("next");
+    // var responsiveSlider = function() {
+    //     var slider = document.getElementsByClassName("article6slider");
+    //     var sliderWidth = slider.offsetWidth;
+    //     var slideList = document.getElementsByClassName("slideWrap");
+    //     var count = 1;
+    //     var items = slideList.getElementsByClassName("li").length;
+    //     var prev = document.getElementById("prev");
+    //     var next = document.getElementById("next");
 
-        window.addEventListener('resize', function() {
-        sliderWidth = slider.offsetWidth;
-    });
-    var nextSlide = function() {
-        if(count < items) {
-            slideList.style.left = "-" + count * sliderWidth + "px";
-            count++;
-        }
-        else if(count = items) {
-            slideList.style.left = "0px";
-            count = 1;
-        }
-    };
-    var prevSlide = function() {
-        if(count > 1) {
-            count = count - 2;
-            slideList.style.left = "-" + count * sliderWidth + "px";
-            count++;
-        }
-        else if(count = 1) {
-            count = items - 1;
-            slideList.style.left = "-" + count * sliderWidth + "px";
-            count++;
-        }
-    };
-    next.addEventListener("click", function() {
-        nextSlide();
-    });
-    prev.addEventListener("click", function() {
-        prevSlide();
-    });
-    setInterval(function() {
-        nextSlide()
-    }, 8000);
+    //     window.addEventListener('resize', function() {
+    //     sliderWidth = slider.offsetWidth;
+    // });
+    // var nextSlide = function() {
+    //     if(count < items) {
+    //         slideList.style.left = "-" + count * sliderWidth + "px";
+    //         count++;
+    //     }
+    //     else if(count = items) {
+    //         slideList.style.left = "0px";
+    //         count = 1;
+    //     }
+    // };
+    // var prevSlide = function() {
+    //     if(count > 1) {
+    //         count = count - 2;
+    //         slideList.style.left = "-" + count * sliderWidth + "px";
+    //         count++;
+    //     }
+    //     else if(count = 1) {
+    //         count = items - 1;
+    //         slideList.style.left = "-" + count * sliderWidth + "px";
+    //         count++;
+    //     }
+    // };
+    // next.addEventListener("click", function() {
+    //     nextSlide();
+    // });
+    // prev.addEventListener("click", function() {
+    //     prevSlide();
+    // });
+    // setInterval(function() {
+    //     nextSlide()
+    // }, 8000);
 
-    };
+    // };
+
+    function fb() {
+    window.location.href = 'https://www.facebook.com/rodanandfields';
+    }
+
+    function twit() {
+        window.location.href = 'https://twitter.com/RodanFieldsHQ';
+    }
+
+    function insta() {
+        window.location.href = 'https://www.instagram.com/rodanandfields/';
+    }
+    function you() {
+        window.location.href = 'https://www.youtube.com/user/RodanFields';
+    }
+    function pinte() {
+        window.location.href = 'https://in.pinterest.com/RodanandFields/';
+    }
 </script>
 </html>
