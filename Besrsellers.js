@@ -94,6 +94,7 @@ function addtobag(index) {
     // console.log(bag);
     alert("Successfuly Added To Cart")
     localStorage.setItem("bagData", JSON.stringify(bag));
+    window.location.reload();
 
 }
 document.querySelector("#bag1").addEventListener("click", opencart);
