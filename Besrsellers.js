@@ -69,6 +69,7 @@ function displayData(prodata) {
         var main = document.createElement("div")
         var prodImage = document.createElement("img");
         prodImage.setAttribute("src", ele.prodimage);
+        prodImage.setAttribute("id", "imgpro")
 
         var prodName = document.createElement("h3");
         prodName.textContent = ele.prodname;
@@ -124,4 +125,23 @@ function sort() {
 var bagLength = JSON.parse(localStorage.getItem("bag_length"))
 console.log(bagLength)
 
-document.querySelector("#bag1").textContent = bagLength
+document.querySelector("#bag1").textContent = bagLength;
+
+function fb() {
+    window.location.href = 'https://www.facebook.com/rodanandfields';
+}
+
+function twit() {
+    window.location.href = 'https://twitter.com/RodanFieldsHQ';
+}
+
+function insta() {
+    window.location.href = 'https://www.instagram.com/rodanandfields/';
+}
+function you() {
+    window.location.href = 'https://www.youtube.com/user/RodanFields';
+}
+function pinte() {
+    window.location.href = 'https://in.pinterest.com/RodanandFields/';
+}
+

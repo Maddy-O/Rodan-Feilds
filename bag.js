@@ -16,6 +16,7 @@ function displayData(arr2) {
         var prodImage = document.createElement("img");
         prodImage.setAttribute("src", ele.prodimage);
 
+
         var prodName = document.createElement("h3");
         prodName.textContent = ele.prodname;
 
