@@ -44,11 +44,11 @@ function displayData(arr2) {
 
 
         var div2 = document.createElement("div");
-        div2.append(prodName, prodPrice)
+        div2.append(prodName, prodPrice,remove)
         div2.setAttribute("id", "name-price")
 
 
-        main.append(prodImage, div2, remove)
+        main.append(prodImage, div2)
         document.querySelector("#bagProduct").append(main)
 
     });
