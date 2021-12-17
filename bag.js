@@ -70,3 +70,10 @@ function deletetask(index) {
 };
 
 localStorage.setItem("bag_length", JSON.stringify(arr2.length));
+function fb() {
+    window.location.href = 'https://www.facebook.com/rodanandfields';
+}
+
+function twit() {
+    window.location.href = 'https://www.facebook.com/rodanandfields';
+}
