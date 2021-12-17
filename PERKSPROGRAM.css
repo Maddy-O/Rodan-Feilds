@@ -1,4 +1,98 @@
+#header{
+    height: 123px;
+    width: 100%;
+    color: #222222;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-variant: normal;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-align: left;
+    text-indent: 0px;
+    letter-spacing: 1.5px;
+    color: rgb(80, 80, 80);
+}
+.headerdiv{
+    display: flex;
+    
+    margin-bottom: 14px;
+    margin-right: 10px;
+    line-height: 24px;
+    align-items:center;
+}
+.leftheader{
+    margin-right: auto;
+    
+    
+}
+#logo{
+    width: 10%;     
+}
+
+.headerright{
+    display: flex;
+    margin-left: auto;
+    border: 1px solid transparent;
+    align-items: flex-end;
+    width: 12%;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+   padding-right: 10px;
+    letter-spacing: 0px;
+    color: rgb(80, 80, 80);
+    border: 1px solid transparent;
+
+    
+    
+}
+.searchlogo{
+    box-sizing: inherit;
+    height: 15px;
+    margin: 0px 5px 5px 2px;
+}
+.flag{
+    margin-right: 7px;
+}
+.line{
+    margin: auto;
+    height: 1px;
+    background-color: black;
+}
+.pageheader{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+.pageheader>ul{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid transparent;
+    justify-content: space-between;
+   
+}
+
+.pageheader>ul>li{
+    border: 1px solid transparent;
+    
+    font-size: 13px;
+    color: rgb(95, 94, 94);
+    cursor: pointer;
+}
+.pageheader>ul>li>span:hover{
+    box-shadow: teal 0px 6px 0px;
+    cursor: pointer;
+}
+/* next content */
+
 .div1{
+    
 border: 1px solid transparent;
 margin: auto;
 text-align: center;
@@ -12,16 +106,19 @@ div:nth-child(1){
     flex-direction: column;
 }
 #heading{
+   
+
     color: grey;
      border: 1px solid transparent; 
      font-size: 50px;  
-     border: 1px solid transparent; 
+     line-height: 0px;
      text-align: center;
      font-family: 'Noto Serif TC', serif;
+     color: grey;
     
  }
 #heading>img{
-    display: inline;
+    
     margin-top: 25px;
     margin-left: 80px;
     width: 8%;
@@ -336,4 +433,91 @@ img{
     transition: max-height 0.2s ease-out;
   }
 
- 
+ /* footer */
+ #footer{
+     
+    margin-top: 300px;
+}
+.footcontent{
+    
+    display: flex;
+}
+ul>li{
+    list-style: none;
+}
+
+.social{
+    margin-top: 20px;
+    margin-left: 50%;
+}
+.social>ul{
+
+    display: flex;
+    padding: 0px;
+    justify-content: flex-start;
+}
+.social>ul>li{
+    padding: 10px;
+    margin-right: 20px;
+}
+.about{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.about>ul{
+    line-height: 10px;
+    padding: 0px;
+    margin-top: 5px;
+    justify-content: flex-start;
+}
+.about>ul>li{
+    color: gray;
+    padding: 5px 0px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.help{
+    margin-left: 100px;
+    line-height: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.help>ul{
+    padding: 0px;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+.help>ul>li{
+    padding: 5px 0px;
+    font-size: 12px;
+    font-weight: normal;
+    color: gray;
+}
+.copyright{
+    border-top: gray 1px solid;
+    display: flex;
+    grid-area: 2/1/2/5;
+    align-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: gray;
+}
+.copyright>ul{
+    display: flex;
+    padding: 0px;
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+.copyright>ul>li{
+    padding: 0px 10px;
+    line-height: 24px;
+    font-size: 11px;
+}
+.copyright>ul>div{
+    width: 1px;
+    background-color: grey;
+    height: 11px;
+    margin-top: 1%;
+}
