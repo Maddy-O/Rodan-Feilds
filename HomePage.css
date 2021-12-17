@@ -44,12 +44,12 @@
     align-items: center;
     margin-right: 10px;
     letter-spacing: 0px;
+    padding: 0px 5px 5px 2px ;
     color: rgb(80, 80, 80);
 }
 .searchlogo{
     box-sizing: inherit;
     height: 15px;
-    margin: 0px 5px 5px 2px;
 }
 .flag{
     margin-right: 7px;
@@ -78,6 +78,13 @@
 }
 .pageheadercontent>ul>li>span{
     padding:  15px 0px 15px 0px;
+    line-height: 30px;
+    font-size: 13px;
+    color: rgb(95, 94, 94);
+    cursor: pointer;
+}
+.pageheadercontent>ul>li>span>a{
+    /* padding:  15px 0px 15px 0px; */
     line-height: 30px;
     font-size: 13px;
     color: rgb(95, 94, 94);
