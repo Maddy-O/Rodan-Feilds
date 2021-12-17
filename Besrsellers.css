@@ -111,6 +111,100 @@ option{
     font-size: 20px;
 }
 
+
+
+#footer{
+    padding: 30px 20px 20px 20px;
+}
+.footcontent{
+    border-top: gray 1px solid;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+ul>li{
+    list-style: none;
+}
+.social{
+    grid-area: 1/4/1/4;
+    font-size: 24px;
+    margin-top: 25px;
+}
+.socialdiv{
+    border: greenyellow 1px solid;
+}
+.social>ul{
+    display: flex;
+    padding: 0px;
+    justify-content: flex-start;
+}
+.social>ul>li{
+    padding: 10px;
+    margin-right: 20px;
+}
+.about{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.about>ul{
+    padding: 0px;
+    margin-top: 5px;
+    justify-content: flex-start;
+}
+.about>ul>li{
+    color: gray;
+    padding: 5px 0px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.help{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.help>ul{
+    padding: 0px;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+.help>ul>li{
+    padding: 5px 0px;
+    font-size: 15px;
+    font-weight: normal;
+    color: gray;
+}
+.copyright{
+    border-top: gray 1px solid;
+    display: flex;
+    grid-area: 2/1/2/5;
+    align-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: gray;
+}
+.copyright>ul{
+    display: flex;
+    padding: 0px;
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+.copyright>ul>li{
+    padding: 0px 10px;
+    line-height: 24px;
+    font-size: 15px;
+}
+.copyright>ul>div{
+    width: 1px;
+    background-color: grey;
+    height: 11px;
+    margin-top: 1%;
+}
+
+
+
+
+
+
 @media only screen and (min-width:376px) and (max-width:768px) {
     #Products {
         grid-template-columns: repeat(2, 90%);
