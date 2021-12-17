@@ -5,185 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #cont{
-            /* border: 2px solid red; */
-            text-align: center;
-         
-        }
-        #cont>h1:nth-child(1){
-                font-size: 40px;
-                color: rgb(48, 48, 48);
-        }
-        #cont>div>P{
-            margin: 0PX;
-            font-size: 20px;
-        }
-        #cont>button{
-            margin-top: 40px;
-             padding: 12px 70px;
-             font-weight: bold;
-             background-color: black;
-             color: white;
-        }
-        #cont>button:hover{
-            background-color: rgb(124, 124, 124);
-        }
-        #cont>h2{
-            font-size: 30px;
-            font-weight: lighter;
-        }
-        #cont>p{
-            /* border: 2px solid red; */
-            width: 70%;
-            margin: auto;
-            font-size: 20px;
-        }
-        #mid{
-            /* border: 2px solid red; */
-            width: 80%;
-            margin: auto;
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-        }
-        #mid>div>img{
-            /* border: 2px solid red; */
-            width:100%
-           
-        }
-        #mid>div>h2,p{
-            font-family: sans-serif;
-            text-align: center;
-        }
-        #title{
-            text-align: center;
-            margin-top: 100px;
-        }
-     #desbox{
-         /* border: 2px solid red; */
-         display: grid;
-         grid-template-columns: repeat(2,1fr);
-         width: 80%;
-         margin: auto;
-     }
-     .imgbox{
-         /* border: 2px solid red; */
-         width: 100%;
-         height: 500px;
-     }
-     .imgbox>img{
-         width: 100%;
-         height: 100%;
-     }
-     .textbox{
-        /* border: 2px solid red; */
-       
-         height: 500px;
-         background-color: rgb(233, 233, 233);
-         
-     } 
-   #desbox>.textbox>h2,p{
-        text-align: center;
-      
-   }
-      
-     
-     #desbox>.textbox>h2{
-         padding-top: 200px;
-     }
-     .text{
-         padding: 0px 40px;
-     }
-
-     #box2{
-         text-align: center;
-         margin: 100px;
-     }
-
-     #box3{
-         /* border: 2px solid red; */
-         width: 90%;
-         margin: auto;
-         display: grid;
-         grid-template-columns: repeat(3, 1fr);
-         grid-gap: 10px;
-
-     }
-     #box3>.imgbox2>img{
-        border: 2px solid blue;
-        width: 100%;
-     }
-     .imgbox2>h2,p{
-                text-align: center;
-     }
-
-
-
-     @media screen and (min-width: 376px) and (max-width:770px) {
-        #mid{
-            /* border: 2px solid red; */
-            width: 80%;
-            margin: auto;
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-        }
-
-        #box3{
-         /* border: 2px solid red; */
-         width: 90%;
-         margin: auto;
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-gap: 10px;
-
-     }
-     }
-
-
-     @media only screen  and (max-width:376px) {
-        #mid{
-            /* border: 2px solid red; */
-            width: 80%;
-            margin: auto;
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 20px;
-        }
-
-        #desbox{
-         /* border: 2px solid red; */
-         display: grid;
-         grid-template-columns: repeat(1,1fr);
-         width: 80%;
-         margin: auto;
-     }
-
-        #box3{
-         /* border: 2px solid red; */
-         width: 90%;
-         margin: auto;
-         display: grid;
-         grid-template-columns: repeat(1, 1fr);
-         grid-gap: 10px;
-
-     }
-     }
-        
-     
-
-    </style>
+    <link rel="stylesheet" href="rf.css">
 </head>
 <body>
+
+
+    <header id="header">
+        <div class="headerdiv">
+            <div class="leftheader">
+                FIND A CONSULTANT
+            </div>
+            <div id="logo">
+                <img  title="Rodan and Fields" alt="Rodan and Fields" src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA">
+            </div>
+            <div class="headerright">
+                <div class="search">
+                    <div>Search</div>
+                    <img class="searchlogo" src="https://img.icons8.com/ios/18/000000/search.png"/>
+                </div>
+                <div class="search">
+                    <div>Sign in</div>
+                    <img class="searchlogo" src="https://img.icons8.com/windows/18/000000/gender-neutral-user.png"/>
+                </div>
+                <div class="search">
+                    <img class="searchlogo" src="https://img.icons8.com/ios/18/000000/shopping-bag--v1.png"/>
+                    <!-- <a href="https://icons8.com/icon/47615/shopping-bag"></a> -->
+                </div>
+                <div class="search">
+                    <img class="flag" src="https://img.icons8.com/color/18/000000/usa.png"/>
+                    <div>English</div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="pageheader">
+            <div class="pageheadercontent">
+                <ul>
+                    <li><span>SHOP
+                    </span></li>
+                    <li><span>BEST SELLERS</span></li>
+                    <li><span>FEATURED</span></li>
+                    <li><span>OUR STORY</span></li>
+                    <li><span>PERKS PROGRAM</span></li>
+                    <li><span>BECOME A CONSULTANT</span></li>
+                    <li><span>BLOG</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
     <div id="cont">
         <h1>THE R+F DIFFERENCE</h1>
         <div><p>Our skincare philosophy sets us apart.</p>
            <p> We make skincare solutions designed to give you the best skin of your life and the confidence that comes with it.</p></div>
-          <button id="btn">SHOP REGIMENS</button>  
+          <button id="btn" >SHOP REGIMENS</button>  
           <h2>DERMATOLOGY-INSPIRED</h2>
           <p>We know skin. Stanford-trained Dermatologists Dr. Katie Rodan and Dr. Kathy Fields use their expertise and over 30 years in practice to formulate products that are innovative, easy-to-use and backed by scientific research.</p>
     </div>
@@ -268,18 +147,93 @@
                     <h2>ADULT ACNE + SIGNS OF AGING</h2>
                     <p>Clear adult acne while visibly firming and improving the appearance of fine lines for younger-looking skin with our UNBLEMISH Regimen</p>
                 </div>
-
-
-
-
             </div>
        
+
+
+
+            <footer id="footer">
+                <div class="footcontent">
+                    <div class="social">
+                        <div class="sociladiv">Let's Get Social</div>
+                        <ul>
+                            <li onclick="fb()"><i class="fab fa-facebook"></i></li>
+                            <li onclick="twit()"><i class="fab fa-twitter"></i></li>
+                            <li onclick="insta()"><i class="fab fa-instagram"></i></li>
+                            <li onclick="you()"><i class="fab fa-youtube"></i></li>
+                            <li onclick="pinte()"><i class="fab fa-pinterest-p"></i></li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <div>About R+F</div>
+                        <ul>
+                            <li>Press Room</li>
+                            <li>Company Info</li>
+                            <li>Executive Team</li>
+                            <li>Careers</li>
+                            <li>R+F Recycling Program</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                    <div class="help">
+                        <div>Help</div>
+                        <ul>
+                            <li>Product & Help Center</li>
+                            <li>Shipping</li>
+                            <li>Satisfaction Guarantee</li>
+                            <li>Promorional Terms & Conditions</li>
+                            <li>R+F Facts</li>
+                            <li>Klarna</li>
+                            <li>Site Map</li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <div>© 2021 Rodan & Fields</div>
+                        <ul>
+                            <li>Privacy Policy</li>
+                            <div></div>
+                            <li>Terms & Conditions</li>
+                            <div></div>
+                            <li>Accessibility</li>
+                            <div></div>
+                            <li>California Supply Chains Act</li>
+                            <div></div>
+                            <li>DSA Code Of Ethics</li>
+                            <div></div>
+                            <li>Disclaimer</li>
+                            <div></div>
+                            <li>Preference Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
 </body>
 </html>
-<script>
-       document.querySelector("#btn").addEventListener("click", goto_shop)
 
-       function goto_shop(){
-           window.location.herf= "shop.html"
+
+<script>
+       document.querySelector("#btn").addEventListener("click", shop)
+
+       function shop(){
+           window.location.href = "shop.html"
+        //    console.log("here")
        }
+
+       function fb() {
+    window.location.href = 'https://www.facebook.com/rodanandfields';
+}
+
+function twit() {
+    window.location.href = 'https://twitter.com/RodanFieldsHQ';
+}
+
+function insta() {
+    window.location.href = 'https://www.instagram.com/rodanandfields/';
+}
+function you() {
+    window.location.href = 'https://www.youtube.com/user/RodanFields';
+}
+function pinte() {
+    window.location.href = 'https://in.pinterest.com/RodanandFields/';
+}
 </script>

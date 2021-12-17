@@ -1,3 +1,176 @@
+#cont{
+    /* border: 2px solid red; */
+    text-align: center;
+ 
+}
+#cont>h1:nth-child(1){
+        font-size: 40px;
+        color: rgb(48, 48, 48);
+}
+#cont>div>P{
+    margin: 0PX;
+    font-size: 20px;
+}
+#cont>button{
+    margin-top: 40px;
+     padding: 12px 70px;
+     font-weight: bold;
+     background-color: black;
+     color: white;
+}
+#cont>button:hover{
+    background-color: rgb(124, 124, 124);
+}
+#cont>h2{
+    font-size: 30px;
+    font-weight: lighter;
+}
+#cont>p{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
+#mid{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+#mid>div>img{
+    /* border: 2px solid red; */
+    width:100%
+   
+}
+#mid>div>h2,p{
+    font-family: sans-serif;
+    text-align: center;
+}
+#title{
+    text-align: center;
+    margin-top: 100px;
+}
+#desbox{
+ /* border: 2px solid red; */
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ width: 80%;
+ margin: auto;
+}
+.imgbox{
+ /* border: 2px solid red; */
+ width: 100%;
+ height: 500px;
+}
+.imgbox>img{
+ width: 100%;
+ height: 100%;
+}
+.textbox{
+/* border: 2px solid red; */
+
+ height: 500px;
+ background-color: rgb(233, 233, 233);
+ 
+} 
+#desbox>.textbox>h2,p{
+text-align: center;
+
+}
+
+
+#desbox>.textbox>h2{
+ padding-top: 200px;
+}
+.text{
+ padding: 0px 40px;
+}
+
+#box2{
+ text-align: center;
+ margin: 100px;
+}
+
+#box3{
+ /* border: 2px solid red; */
+ width: 90%;
+ margin: auto;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-gap: 10px;
+
+}
+#box3>.imgbox2>img{
+/* border: 2px solid blue; */
+width: 100%;
+}
+.imgbox2>h2,p{
+        text-align: center;
+}
+
+
+
+@media screen and (min-width: 376px) and (max-width:770px) {
+#mid{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#box3{
+ /* border: 2px solid red; */
+ width: 90%;
+ margin: auto;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-gap: 10px;
+
+}
+}
+
+
+@media only screen  and (max-width:376px) {
+#mid{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+#desbox{
+ /* border: 2px solid red; */
+ display: grid;
+ grid-template-columns: repeat(1,1fr);
+ width: 80%;
+ margin: auto;
+}
+
+#box3{
+ /* border: 2px solid red; */
+ width: 90%;
+ margin: auto;
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ grid-gap: 10px;
+
+}
+}
+
+
+
+
+
+
 #header{
     /* border: 2px solid red; */
    
@@ -175,108 +348,6 @@
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-.text>h1{
-    text-align: center;
-    font-size: 40px;
-}
-.text>p{
-    /* border: 2px solid red; */
-    font-size: 24px;
-    width: 50%;
-   margin: auto;
-
-}
-#Products{
-    /* border: 2px solid green; */
-    width: 70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 80px;
-    margin-top: 40px;
-}
-
-
-#Products>div>img{
-    /* border: 4px solid red; */
-    width: 100%;
-    height: 400px;
-    
-}
-#Products>div>h3,p,button{
-    /* border: 2px solid teal; */
-    margin: auto;
-    text-align: center;
-    padding: 20px 0px;
-   
-    
-    
-}
-#Products>div>h3{
-   font-size: 20px;
-   font-family: sans-serif;
-}
-#Products>div>button{
-    width: 100%;
-    background-color: rgb(243, 243, 243);
-    border-radius: 2px;
-    font-weight: bold;
-    font-size: 20px;
-    color: rgb(39, 39, 38);
-}
-#Products>div>button:hover{
-  
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-@media only screen and (max-width:800px) {
-    #Products{
-
-        /* border: 2px solid green; */
-        width: 70%;
-        display: grid;
-        margin: auto;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 80px;
-        margin-top: 40px;
-    }
-   
-}
-
-@media only screen and (max-width: 377px) {
-    #Products{
-      
-        width: 70%;
-        display: grid;
-        margin: auto;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 80px;
-        margin-top: 40px;
-    }
-    
-}
-
-#priceSort{
-   
-    margin-left: 70%;
-}
-#sort{
-    border: 2px solid transparent;
-}
-
-
 
 
 #footer{

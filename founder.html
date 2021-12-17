@@ -5,163 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-          #title>h1{
-            /* border: 2px solid red; */
-            width: 90%;
-              font-size: 55px;
-              font-weight: lighter;
-            text-align: center;
-            margin-top: 20px;
-            margin: auto;
-        }
-        #title>p{
-            /* border: 2px solid red; */
-            width: 60%;
-            margin: auto;
-            padding: 20px 5px;
-            font-size: 18px;
-        }
-        #founder{
-            /* border: 2px solid red; */
-            width: 80%;
-            margin: auto;
-           
-        }
-        #founder>img{
-            width: 100%;
-            padding-top: 70px;
-        }
-     #desbox{
-         /* border: 2px solid red; */
-         display: grid;
-         grid-template-columns: repeat(2,1fr);
-         width: 80%;
-         margin: auto;
-     }
-     .imgbox{
-         /* border: 2px solid red; */
-         width: 100%;
-         height: 600px;
-     }
-     .imgbox>img{
-         width: 100%;
-         height: 100%;
-     }
-     .textbox{
-        /* border: 2px solid red; */
-       
-         height: 600px;
-         background-color: rgb(233, 233, 233);
-         
-     } 
-   #desbox>.textbox>h2,p{
-        text-align: center;
-      
-   }
-      
-     
-     #desbox>.textbox>h2{
-         padding-top: 200px;
-        
-     }
-     .text{
-         padding: 0px 40px;
-     }
-
-     #box2{
-         text-align: center;
-         margin: 100px;
-     }
-
-     #box3{
-         /* border: 2px solid red; */
-         width: 90%;
-         margin: auto;
-         display: grid;
-         grid-template-columns: repeat(3, 1fr);
-         grid-gap: 10px;
-
-     }
-     #box3>.imgbox2>img{
-        /* border: 2px solid blue; */
-        width: 100%;
-     }
-     .imgbox2>h2,p{
-                text-align: center;
-     }
-
-
-
-     @media screen and (min-width: 376px) and (max-width:770px) {
-        #mid{
-            /* border: 2px solid red; */
-            width: 80%;
-            margin: auto;
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-        }
-
-        #box3{
-         /* border: 2px solid red; */
-         width: 90%;
-         margin: auto;
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-gap: 10px;
-
-     }
-     }
-
-
-     @media only screen  and (max-width:376px) {
-        #mid{
-            /* border: 2px solid red; */
-            width: 80%;
-            margin: auto;
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 20px;
-        }
-
-        #desbox{
-         /* border: 2px solid red; */
-         display: grid;
-         grid-template-columns: repeat(1,1fr);
-         width: 80%;
-         margin: auto;
-     }
-
-        #box3{
-         /* border: 2px solid red; */
-         width: 90%;
-         margin: auto;
-         display: grid;
-         grid-template-columns: repeat(1, 1fr);
-         grid-gap: 10px;
-
-     }
-     }
-     #para{
-         
-         width: 90%;
-         margin: auto;
-         padding: 200px 0px;
-     }
-   
-     #para>p{
-         /* border: 2px solid red; */
-         text-align: left;
-         margin: 0px;
-       
-     }
-        
-    </style>
+    <link rel="stylesheet" href="founder.css">
 </head>
 <body>
+
+    <header id="header">
+        <div class="headerdiv">
+            <div class="leftheader">
+                FIND A CONSULTANT
+            </div>
+            <div id="logo">
+                <img  title="Rodan and Fields" alt="Rodan and Fields" src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA">
+            </div>
+            <div class="headerright">
+                <div class="search">
+                    <div>Search</div>
+                    <img class="searchlogo" src="https://img.icons8.com/ios/18/000000/search.png"/>
+                </div>
+                <div class="search">
+                    <div>Sign in</div>
+                    <img class="searchlogo" src="https://img.icons8.com/windows/18/000000/gender-neutral-user.png"/>
+                </div>
+                <div class="search">
+                    <img class="searchlogo" src="https://img.icons8.com/ios/18/000000/shopping-bag--v1.png"/>
+                    <!-- <a href="https://icons8.com/icon/47615/shopping-bag"></a> -->
+                </div>
+                <div class="search">
+                    <img class="flag" src="https://img.icons8.com/color/18/000000/usa.png"/>
+                    <div>English</div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="pageheader">
+            <div class="pageheadercontent">
+                <ul>
+                    <li><span>SHOP
+                    </span></li>
+                    <li><span>BEST SELLERS</span></li>
+                    <li><span>FEATURED</span></li>
+                    <li><span>OUR STORY</span></li>
+                    <li><span>PERKS PROGRAM</span></li>
+                    <li><span>BECOME A CONSULTANT</span></li>
+                    <li><span>BLOG</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
     <div id="title">
         <h1>MEET OUR FOUNDERS</h1>
         <p>Dr. Katie Rodan and Dr. Kathy Fields founded Rodan + Fields on the belief that everyone deserves great skin. They’re dermatologists, innovators and entrepreneurs who create revolutionary products that deliver real results.</p>
@@ -275,7 +171,80 @@
         </div>
 
 
-
+        <footer id="footer">
+            <div class="footcontent">
+                <div class="social">
+                    <div class="sociladiv">Let's Get Social</div>
+                    <ul>
+                        <li onclick="fb()"><i class="fab fa-facebook"></i></li>
+                        <li onclick="twit()"><i class="fab fa-twitter"></i></li>
+                        <li onclick="insta()"><i class="fab fa-instagram"></i></li>
+                        <li onclick="you()"><i class="fab fa-youtube"></i></li>
+                        <li onclick="pinte()"><i class="fab fa-pinterest-p"></i></li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <div>About R+F</div>
+                    <ul>
+                        <li>Press Room</li>
+                        <li>Company Info</li>
+                        <li>Executive Team</li>
+                        <li>Careers</li>
+                        <li>R+F Recycling Program</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <div>Help</div>
+                    <ul>
+                        <li>Product & Help Center</li>
+                        <li>Shipping</li>
+                        <li>Satisfaction Guarantee</li>
+                        <li>Promorional Terms & Conditions</li>
+                        <li>R+F Facts</li>
+                        <li>Klarna</li>
+                        <li>Site Map</li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <div>© 2021 Rodan & Fields</div>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <div></div>
+                        <li>Terms & Conditions</li>
+                        <div></div>
+                        <li>Accessibility</li>
+                        <div></div>
+                        <li>California Supply Chains Act</li>
+                        <div></div>
+                        <li>DSA Code Of Ethics</li>
+                        <div></div>
+                        <li>Disclaimer</li>
+                        <div></div>
+                        <li>Preference Center</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
    
 </body>
-</html>
+
+<script>
+    function fb() {
+    window.location.href = 'https://www.facebook.com/rodanandfields';
+}
+
+function twit() {
+    window.location.href = 'https://twitter.com/RodanFieldsHQ';
+}
+
+function insta() {
+    window.location.href = 'https://www.instagram.com/rodanandfields/';
+}
+function you() {
+    window.location.href = 'https://www.youtube.com/user/RodanFields';
+}
+function pinte() {
+    window.location.href = 'https://in.pinterest.com/RodanandFields/';
+}
+</script>
