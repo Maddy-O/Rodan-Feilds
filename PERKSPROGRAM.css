@@ -444,11 +444,15 @@ img{
 }
 ul>li{
     list-style: none;
+    cursor: pointer;
 }
 
 .social{
     margin-top: 20px;
     margin-left: 50%;
+}
+ul>li>a{
+    color: black;
 }
 .social>ul{
 
