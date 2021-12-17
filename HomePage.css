@@ -188,7 +188,7 @@ ul>li{
 
 
 #contentbody{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0px;
     max-width: 1440px;
     width: 100%;
@@ -203,28 +203,37 @@ ul>li{
     padding: 0px;
 }
 .block1{
-    /* max-width: 1440px;
-    width: 100%; */
-    border: blue solid 1px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    height: 100%;
+}
+.block1>div{
+    border: transparent solid 1px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(https://www.rodanandfields.com/en-us/medias/shot-1-best-sellers-homepage-US-Total-rf-serum-0040-0045-V2-3-2-1440x600-progressive.jpg?context=bWFzdGVyfHJvb3R8MjgwNDk3fGltYWdlL2pwZWd8aDVkL2hmMy8xNDE2MTMxMjE4NjM5OC5qcGd8NTRkNWQzYTJmZmQ3YTM2NzkyNDZmMmMxMzMxZGQwYTUyZjQ0M2E0NTEyOTRlZDhjZWQ4YzdhNGQyZjExMDY2Yw);
     background-repeat: no-repeat;
     background-size: cover;
-    cursor: pointer;
-    margin-bottom: 20px;
 }
 .image1content{
     width: 340px;
-    height: 190px;
     margin: 117px 860px 260px 63px;
 }
 .image1content>h2{
     letter-spacing: 0px;
     word-spacing: -4px;
     font-size: 40px;
+    font-weight: lighter;
+    color: rgb(50, 50, 50);
 }
 .image1content>p{
     font-size: 18px;
     width: 100%;
+    font-family: sans-serif;
+    word-spacing: 2px;
+    letter-spacing: .5px;
+    line-height: 24px;
 }
 .image1content>div>button{
     width: 100%;
@@ -233,6 +242,7 @@ ul>li{
     border-radius: 4px;
     cursor: pointer;
     font-size: 18px;
+    font-stretch: 100%;
 }
 /* ----------------------Article-1--------------- */
 .shopnow{
@@ -401,6 +411,27 @@ i{
 .item4div>button:hover{
     box-shadow: gray 0px 0px 0px ;
 }
+.article2line{
+    /* border: solid black 1px; */
+    /* height: 50px; */
+    /* margin-bottom: 20px; */
+    /* background-color: saddlebrown; */
+    padding: 10px 15px;
+    display: flex;
+}
+.article2line>:first-child{
+    width: 50%;
+    background-color: gray;
+    height: 5px;
+    margin: 0px;
+}
+.article2line>:last-child{
+    width: 50%;
+    background-color: rgb(211, 211, 211);
+    height: 5px;
+    margin: 0px;
+}
+
 /* -----------------Article-3----------------------- */
 
 .article3{
@@ -713,42 +744,115 @@ i{
 
 .article6{
     max-width: 1440px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+.followus{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-stretch: 100%;
+    color: rgb(34, 34, 34);
+    font-weight: 300;
+}
+.sliderWrap{
+    /* max-width: 1440px; */
+    display: grid;
+    grid-template-columns: repeat(8,18%);
+    overflow: hidden;
+    grid-gap: 10px;
+    padding: 0;
+    /* position: relative; */
+}
+.sliderWrap>li>img{
+    width: 100%;
+    height: 90%;
+}
+/* @keyframes round{
+    25%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+-webkit -@keyframes round {
+    25% {
+        opacity: 1;
+        -webkit-opacity: 1;
+    }
+    40% {
+        opacity: 0;
+        -webkit-opacity: 0;
+    }
+}
+.lis:nth-child(1){
+    animation-delay: 28s;
+}
+.lis:nth-child(2){
+    animation-delay: 24s;
+}
+.lis:nth-child(3){
+    animation-delay: 20s;
+}
+.lis:nth-child(4){
+    animation-delay: 16s;
+}
+.lis:nth-child(5){
+    animation-delay: 12s;
+}
+.lis:nth-child(6){
+    animation-delay: 8s;
+}
+.lis:nth-child(7){
+    animation-delay: 4s;
+}
+.lis:nth-child(8){
+    animation-delay: 0s;
+} */
+
+/* ----Article-7---- */
+
+.article7{
+    max-width: 1440px;
     /* margin-top: 20px; */
     margin-bottom: 40px;
     padding: 32px 141px 32px 141px;
     background-color: rgb(225, 234, 241);
 }
-.article6content{
+.article7content{
     padding: 14px 32px 14px 32px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 24px;
     background-color: white;
 }
-.article6content>:first-child{
+.article7content>:first-child{
     text-align: center;
     font-size: 30px;
     font-stretch: 100%;
     padding: 0px 0px 0px 40px;
 }
-.article6content>:nth-child(2){
+.article7content>:nth-child(2){
     margin: 0px 24px px -37px;
     font-size: 16px;
     font-stretch: 100%;
 }
-.article6content>:last-child{
+.article7content>:last-child{
+    /* border: 1px solid black; */
+    text-align: right;
     margin: 0px 0px 16px 0px;
 }
-.article6content>:last-child>button{
-    border: 2px solid black;
+.article7content>:last-child>button{
+    border: 1.8px solid black;
     cursor: pointer;
     box-shadow: gray 0px 2px 2px;
     padding: 10px 16px 10px 16px;
     background-color: white;
     border-radius: 5px;
     justify-content: center;
+    font-stretch: 100%;
     justify-items: center;
 }
-.article6content>:last-child>button:hover{
+.article7content>:last-child>button:hover{
     box-shadow: white 0px 2px 2px;
 }

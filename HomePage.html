@@ -59,11 +59,13 @@
     <div id="contentbody">
         <div class="content">
             <article class="block1">
-                <div class="image1content">
-                    <h2>From Us, With Love</h2>
-                    <p>Shop Bestsellers + treat your loved ones to life-changing skincare.</p>
-                    <div>
-                        <button>SHOP NOW</button>
+                <div >
+                    <div class="image1content">
+                        <h2>From Us, With Love</h2>
+                        <p>Shop Bestsellers + treat your loved ones to life-changing skincare.</p>
+                        <div>
+                            <button>SHOP NOW</button>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -161,8 +163,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <hr>
+                    <div class="article2line">
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
             </article>
@@ -275,9 +278,23 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="article6">
-                    <div class="article6content">
+                    <div class="followus">Follow us @rodanandfields</div>
+                    <div class="articel6slider">
+                        <ul class="sliderWrap">
+                            <li class="lis"><img src="https://cdn-yotpo-images-production.yotpo.com/instagram/21/18173775787084721/low_resolution.jpg"></li>
+                            <li class="lis"><img src="https://cdn-yotpo-images-production.yotpo.com/instagram/51/17914183256051851/low_resolution.jpg"></li>
+                            <li class="lis"><img src="https://cdn-yotpo-images-production.yotpo.com/instagram/24/17897284883279424/low_resolution.jpg"></li>
+                            <li class="lis"><img src="https://cdn-yotpo-images-production.yotpo.com/instagram/85/18124584601232185/low_resolution.jpg"></li>
+                            <li class="lis"><img src="https://cdn-yotpo-images-production.yotpo.com/instagram/80/17889235427243880/low_resolution.jpg"></li>
+                            <li class="lis"><img src="https://cdn-yotpo-images-production.yotpo.com/instagram/94/17878795901249094/low_resolution.jpg"></li>
+                            <li class="lis"><img src="https://cdn-yotpo-images-production.yotpo.com/instagram/98/17898648335425798/low_resolution.jpg"></li>
+                            <li class="lis"><img src="https://cdn-yotpo-images-production.yotpo.com/instagram/58/18145885435212058/low_resolution.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="article7">
+                    <div class="article7content">
                         <div>
                             Personalized Skincare Services
                         </div>
@@ -365,4 +382,51 @@
         </div>
     </footer>
 </body>
+<script>
+    var responsiveSlider = function() {
+        var slider = document.getElementsByClassName("article6slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementsByClassName("slideWrap");
+        var count = 1;
+        var items = slideList.getElementsByClassName("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+
+        window.addEventListener('resize', function() {
+        sliderWidth = slider.offsetWidth;
+    });
+    var nextSlide = function() {
+        if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+        }
+        else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+        }
+    };
+    var prevSlide = function() {
+        if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+        }
+        else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+        }
+    };
+    next.addEventListener("click", function() {
+        nextSlide();
+    });
+    prev.addEventListener("click", function() {
+        prevSlide();
+    });
+    setInterval(function() {
+        nextSlide()
+    }, 8000);
+
+    };
+</script>
 </html>
