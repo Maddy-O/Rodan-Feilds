@@ -73,6 +73,11 @@ label{
 }
 option{
     font-size: 20px;
+};
+.search>#bag_length{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
 }
 
 

@@ -54,7 +54,7 @@ var arr = [
         price: "66.00"
     },
 ];
-
+var bagLength = JSON.parse(localStorage.getItem("bag_length"))
 localStorage.setItem("ProductData", JSON.stringify(arr));
 
 var prodata = JSON.parse(localStorage.getItem("ProductData"));
@@ -98,10 +98,6 @@ function addtobag(index) {
     window.location.reload();
 
 }
-document.querySelector("#bag1").addEventListener("click", opencart);
-function opencart() {
-    window.location.href = "bag.html";
-}
 
 function sort() {
     var selected = document.querySelector("#price-sort").value;
@@ -122,10 +118,10 @@ function sort() {
 
 
 ///// bag Length part
-var bagLength = JSON.parse(localStorage.getItem("bag_length"))
-console.log(bagLength)
 
-document.querySelector("#bag1").textContent = bagLength;
+
+
+document.querySelector("#bag_length").textContent = bagLength;
 
 function fb() {
     window.location.href = 'https://www.facebook.com/rodanandfields';
