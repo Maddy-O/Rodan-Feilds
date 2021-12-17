@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <script src="https://kit.fontawesome.com/96bcaae285.js" crossorigin="anonymous"></script>
+    <style>
+        #header{
+            height: 123px;
+            width: 100%;
+            color: #222222;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            font-style: normal;
+            font-variant: normal;
+            text-decoration: none solid rgb(34, 34, 34);
+            text-align: left;
+            text-indent: 0px;
+            letter-spacing: 1.5px;
+            color: rgb(80, 80, 80);
+        }
+        .headerdiv{
+            display: flex;
+            margin-top: 12px;
+            margin-bottom: 14px;
+            margin-right: 10px;
+            line-height: 24px;
+            align-items:center;
+        }
+        .leftheader{
+            padding: 10px;
+        }
+        #logo{
+            width: 100%;
+            left: 0px;
+            height: 25px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+        .headerright{
+            display: flex;
+            margin-left: auto;
+            padding-right: 0.5rem;
+            align-items: flex-end;
+        }
+        .search{
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            letter-spacing: 0px;
+            color: rgb(80, 80, 80);
+        }
+        .searchlogo{
+            box-sizing: inherit;
+            height: 15px;
+            margin: 0px 5px 5px 2px;
+        }
+        .flag{
+            margin-right: 7px;
+        }
+        .line{
+            margin: auto;
+            height: 1px;
+            background-color: black;
+        }
+        #pageheader{
+            width: 100%;
+            letter-spacing: 0px;
+        }
+        .pageheadercontent{
+            display: flex;
+            justify-content: center;
+            padding: 0px;
+        }
+        .pageheadercontent>ul{
+            display: flex;
+            margin: 0px;
+            list-style-type: none;
+        }
+        .pageheadercontent>ul>li{
+            padding:  15px 23px 14px 23px;
+        }
+        .pageheadercontent>ul>li>span{
+            padding:  15px 0px 15px 0px;
+            line-height: 30px;
+            font-size: 13px;
+            color: rgb(95, 94, 94);
+            cursor: pointer;
+        }
+        .pageheadercontent>ul>li>span:hover{
+            box-shadow: teal 0px 6px 0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="headerdiv">
+            <div class="leftheader">
+                FIND A CONSULTANT
+            </div>
+            <div id="logo">
+                <img  title="Rodan and Fields" alt="Rodan and Fields" src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA">
+            </div>
+            <div class="headerright">
+                <div class="search">
+                    <div>Search</div>
+                    <img class="searchlogo" src="https://img.icons8.com/ios/18/000000/search.png"/>
+                </div>
+                <div class="search">
+                    <div>Sign in</div>
+                    <img class="searchlogo" src="https://img.icons8.com/windows/18/000000/gender-neutral-user.png"/>
+                </div>
+                <div class="search">
+                    <img class="searchlogo" src="https://img.icons8.com/ios/18/000000/shopping-bag--v1.png"/>
+                    <!-- <a href="https://icons8.com/icon/47615/shopping-bag"></a> -->
+                </div>
+                <div class="search">
+                    <img class="flag" src="https://img.icons8.com/color/18/000000/usa.png"/>
+                    <div>English</div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="pageheader">
+            <div class="pageheadercontent">
+                <ul>
+                    <li><span>SHOP
+                    </span></li>
+                    <li><span>BEST SELLERS</span></li>
+                    <li><span>FEATURED</span></li>
+                    <li><span>OUR STORY</span></li>
+                    <li><span>PERKS PROGRAM</span></li>
+                    <li><span>BECOME A CONSULTANT</span></li>
+                    <li><span>BLOG</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
