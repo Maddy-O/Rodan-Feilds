@@ -16,3 +16,21 @@
      arr.push(communityAObj);
      localStorage.setItem("communityDetails",JSON.stringify(arr));
     }
+
+function fb() {
+    window.location.href = 'https://www.facebook.com/rodanandfields';
+}
+
+function twit() {
+    window.location.href = 'https://twitter.com/RodanFieldsHQ';
+}
+
+function insta() {
+    window.location.href = 'https://www.instagram.com/rodanandfields/';
+}
+function you() {
+    window.location.href = 'https://www.youtube.com/user/RodanFields';
+}
+function pinte() {
+    window.location.href = 'https://in.pinterest.com/RodanandFields/';
+}
