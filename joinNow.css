@@ -25,12 +25,13 @@
     padding: 10px;
 }
 #logo{
-    width: 100%;
+    width: 50%;
     left: 0px;
     height: 25px;
     position: absolute;
-    width: 100%;
+    width: 50%;
     text-align: center;
+    padding: 0% 25% 0% 25%;
 }
 .headerright{
     display: flex;
@@ -43,12 +44,12 @@
     align-items: center;
     margin-right: 10px;
     letter-spacing: 0px;
+    padding: 0px 5px 5px 2px ;
     color: rgb(80, 80, 80);
 }
 .searchlogo{
     box-sizing: inherit;
     height: 15px;
-    margin: 0px 5px 5px 2px;
 }
 .flag{
     margin-right: 7px;
@@ -82,11 +83,17 @@
     color: rgb(95, 94, 94);
     cursor: pointer;
 }
+.pageheadercontent>ul>li>span>a{
+    /* padding:  15px 0px 15px 0px; */
+    line-height: 30px;
+    font-size: 13px;
+    color: rgb(95, 94, 94);
+    cursor: pointer;
+}
 .pageheadercontent>ul>li>span:hover{
     box-shadow: teal 0px 6px 0px;
     cursor: pointer;
 }
-
 
 
 #container{
@@ -203,6 +210,7 @@ select{
     }
 }
 
+
 #footer{
     padding: 30px 20px 20px 20px;
 }
@@ -232,7 +240,7 @@ ul>li{
     margin-right: 20px;
 }
 .about{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -244,11 +252,11 @@ ul>li{
 .about>ul>li{
     color: gray;
     padding: 5px 0px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: normal;
 }
 .help{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -259,7 +267,7 @@ ul>li{
 }
 .help>ul>li{
     padding: 5px 0px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: normal;
     color: gray;
 }
@@ -269,7 +277,7 @@ ul>li{
     grid-area: 2/1/2/5;
     align-content: center;
     align-items: center;
-    font-size: 11px;
+    font-size: 15px;
     color: gray;
 }
 .copyright>ul{
@@ -281,7 +289,7 @@ ul>li{
 .copyright>ul>li{
     padding: 0px 10px;
     line-height: 24px;
-    font-size: 11px;
+    font-size: 15px;
 }
 .copyright>ul>div{
     width: 1px;
