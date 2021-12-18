@@ -90,4 +90,8 @@ function pinte() {
     window.location.href = 'https://in.pinterest.com/RodanandFields/';
 }
 
+document.querySelector('#checkout').addEventListener('click',checkOut1);
+    function checkOut1(){
+        window.location.href='paymentGateway.html';
+    }
 
