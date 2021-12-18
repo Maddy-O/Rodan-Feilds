@@ -1,5 +1,4 @@
-
-    document.querySelector('#btn1').addEventListener('click',signUp);
+document.querySelector('#btn1').addEventListener('click',signUp);
     function signUp(){
         window.location.href='joinnow.html';
     }
@@ -43,4 +42,3 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
-
