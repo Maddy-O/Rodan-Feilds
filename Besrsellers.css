@@ -227,6 +227,9 @@ ul>li{
     color: rgb(80, 80, 80);
     
 } 
+a{
+    color: rgb(80, 80, 80);
+}
 
 #bg{                             /*id bg for bAG */
     margin-bottom: 2px;
