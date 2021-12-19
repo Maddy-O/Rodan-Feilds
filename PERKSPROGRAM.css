@@ -39,6 +39,7 @@
     justify-content: space-between;
 }
 .search{
+
     display: flex;
     align-items: center;
    padding-right: 10px;
@@ -80,7 +81,8 @@
 
 .pageheader>ul>li{
     border: 1px solid transparent;
-    
+    text-align: center;
+    margin-right: 10px;
     font-size: 13px;
     color: rgb(95, 94, 94);
     cursor: pointer;
@@ -345,6 +347,7 @@ img{
    
 }
 .imagedes{
+ 
    font-size: 12px;
    margin:auto;
    line-height:18px;
@@ -355,7 +358,7 @@ img{
    
 }
 .style{
-
+  
  font-size: 14px;
    color: black;
    border: 1px solid black;
@@ -368,14 +371,17 @@ img{
 
 /* next content */
   .contactDetails{
+     
       margin-top: 10px;
       text-align: center;
       margin-bottom: 40px;
   }
-  a{
-      color: rgb(97, 197, 236);
-      font-size: 15px;
-  }
+  
+    a{
+        color: rgb(80, 80, 80);
+    }
+     
+  
   .already{
       font-size: 25px;
   }

@@ -73,7 +73,9 @@ h1{
    margin-left: 20px;  
   
 }
-
+a{
+    color: rgb(80, 80, 80);
+}
 .remove{
    
     /* border: 3px solid brown; */
